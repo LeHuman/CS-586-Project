@@ -2,9 +2,12 @@
 
 #include <set>
 
-#include "abstractFactory.hpp"
+#include "factory/factory.hpp"
 #include "strategy/strategy.hpp"
 
+/**
+ * @brief The Output Processor receives actions from a state and uses the appropriate strategy
+ */
 class OP {
 private:
     DataStore *ds;
@@ -21,15 +24,33 @@ public:
 
     virtual ~OP();
 
+    /**
+     * @brief call StorePrice using the pointer to the set strategy
+     */
     void StorePrice();
 
+    /**
+     * @brief call ZeroCF using the pointer to the set strategy
+     */
     void ZeroCF();
 
+    /**
+     * @brief call IncreaseCF using the pointer to the set strategy
+     */
     void IncreaseCF();
 
+    /**
+     * @brief call ReturnCoins using the pointer to the set strategy
+     */
     void ReturnCoins();
 
-    void DisposeDrink(int id);
+    /**
+     * @brief call DisposeDrink using the pointer to the set strategy
+     */
+    void DisposeDrink(int d);
 
+    /**
+     * @brief call DisposeAdditive using the pointer to the set strategy
+     */
     void DisposeAdditive(std::set<int> a);
 };

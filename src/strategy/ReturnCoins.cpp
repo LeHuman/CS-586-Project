@@ -1,9 +1,9 @@
 #include <iostream>
 #include <utility>
 
-#include "../include/abstractFactory.hpp"
-#include "../include/VM.hpp"
-#include "../include/strategy/strategy.hpp"
+#include "../../include/VM.hpp"
+#include "../../include/factory/factory.hpp"
+#include "../../include/strategy/strategy.hpp"
 
 void ReturnCoins_Int::ReturnCoins() {
     std::cout << "return Coins" << std::endl;

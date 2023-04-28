@@ -1,17 +1,17 @@
 #include <iostream>
 
-#include "../include/VM_2.hpp"
+#include "../../include/VM2.hpp"
 
 /* VM 2 */
 
-VM_2::VM_2(AbstractFactory *a, MDA *m) : af(a), mda(m) { ds = (DS_2 *)(af->createDS()); }
+VM2::VM2(AbstractFactory *a, MDA *m) : af(a), mda(m) { ds = (DS_2 *)(af->createDS()); }
 
-void VM_2::CREATE(float p) {
+void VM2::CREATE(float p) {
     ds->set_temp_price(p);
     mda->create();
 }
 
-void VM_2::COIN(int v) {
+void VM2::COIN(int v) {
     ds->set_temp_value(v);
 
     if (ds->get_price() <= ds->get_coins() + v) {
@@ -21,32 +21,32 @@ void VM_2::COIN(int v) {
     }
 }
 
-void VM_2::SUGAR() {
+void VM2::SUGAR() {
     mda->additive(additive_e::SUGAR);
 }
 
-void VM_2::CREAM() {
+void VM2::CREAM() {
     mda->additive(additive_e::CREAM);
 }
 
-void VM_2::COFFEE() {
+void VM2::COFFEE() {
     mda->dispose_drink(drink_e::COFFEE);
 }
 
-void VM_2::InsertCups(int n) {
+void VM2::InsertCups(int n) {
     mda->insert_cups(n);
 }
 
-void VM_2::SetPrice(int p) {
+void VM2::SetPrice(int p) {
     ds->set_temp_price(p);
     mda->set_price();
 }
 
-void VM_2::CANCEL() {
+void VM2::CANCEL() {
     mda->cancel();
 }
 
-void VM_2::CARD(int x) {
+void VM2::CARD(int x) {
     if (ds->get_price() <= x) {
         mda->card();
     } else {
@@ -56,49 +56,49 @@ void VM_2::CARD(int x) {
 
 /* Concrete Factory for VM 2 */
 
-DataStore *Fact_VM_2::createDS() {
+DataStore *VM2Factory::createDS() {
     if (!cacheDS) {
         cacheDS = new DS_2();
     }
     return cacheDS;
 }
 
-StorePrice_t *Fact_VM_2::createSP() {
+StorePrice_t *VM2Factory::createSP() {
     if (!cacheSP) {
         cacheSP = new StorePrice_Float();
     }
     return cacheSP;
 }
 
-ZeroCF_t *Fact_VM_2::createZCF() {
+ZeroCF_t *VM2Factory::createZCF() {
     if (!cacheZCF) {
         cacheZCF = new ZeroCF_Float();
     }
     return cacheZCF;
 }
 
-IncreaseCF_t *Fact_VM_2::createICF() {
+IncreaseCF_t *VM2Factory::createICF() {
     if (!cacheICF) {
         cacheICF = new IncreaseCF_Float();
     }
     return cacheICF;
 }
 
-ReturnCoins_t *Fact_VM_2::createRC() {
+ReturnCoins_t *VM2Factory::createRC() {
     if (!cacheRC) {
         cacheRC = new ReturnCoins_Float();
     }
     return cacheRC;
 }
 
-DisposeDrink_t *Fact_VM_2::createDD() {
+DisposeDrink_t *VM2Factory::createDD() {
     if (!cacheDD) {
         cacheDD = new DisposeDrink_2();
     }
     return cacheDD;
 }
 
-DisposeAdditive_t *Fact_VM_2::createDA() {
+DisposeAdditive_t *VM2Factory::createDA() {
     if (!cacheDA) {
         cacheDA = new DisposeAdditive_2();
     }

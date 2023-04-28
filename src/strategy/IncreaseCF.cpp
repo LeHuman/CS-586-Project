@@ -1,24 +1,26 @@
 #include <iostream>
 #include <utility>
 
-#include "../include/abstractFactory.hpp"
-#include "../include/VM.hpp"
-#include "../include/strategy/strategy.hpp"
+#include "../../include/VM.hpp"
+#include "../../include/factory/factory.hpp"
+#include "../../include/strategy/strategy.hpp"
 
 void IncreaseCF_Int::IncreaseCF(DataStore *ds) {
-    DS_1 *ds1 = (DS_1 *)ds;
-    ds1->set_coins(ds1->get_coins() + ds1->get_temp_value());
-    int b = ds1->get_coins();
-    std::cout << "Current balance : " << b << std::endl;
-    int p = ds1->get_price();
-    std::cout << "Price for a drink : " << p << std::endl;
+    if (DS_2 *ds_2 = dynamic_cast<DS_2 *>(ds)) {
+        ds_2->set_coins(ds_2->get_coins() + ds_2->get_temp_value());
+        int p = ds_2->get_price();
+        std::cout << "Price of drink : " << p << std::endl;
+        int b = ds_2->get_coins();
+        std::cout << "Current funds : " << b << std::endl;
+    }
 }
 
 void IncreaseCF_Float::IncreaseCF(DataStore *ds) {
-    DS_2 *ds2 = (DS_2 *)ds;
-    ds2->set_coins(ds2->get_coins() + ds2->get_temp_value());
-    float b = ds2->get_coins();
-    std::cout << "Current balance : " << b << std::endl;
-    float p = ds2->get_price();
-    std::cout << "Price for a drink : " << p << std::endl;
+    if (DS_1 *ds_1 = dynamic_cast<DS_1 *>(ds)) {
+        ds_1->set_coins(ds_1->get_coins() + ds_1->get_temp_value());
+        int p = ds_1->get_price();
+        std::cout << "Price of drink : " << p << std::endl;
+        int b = ds_1->get_coins();
+        std::cout << "Current funds : " << b << std::endl;
+    }
 }

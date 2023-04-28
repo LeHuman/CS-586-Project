@@ -36,8 +36,8 @@ void OP::ReturnCoins() {
     rc->ReturnCoins();
 }
 
-void OP::DisposeDrink(int id) {
-    dd->DisposeDrink(id);
+void OP::DisposeDrink(int d) {
+    dd->DisposeDrink(d);
 }
 
 void OP::DisposeAdditive(std::set<int> a) {

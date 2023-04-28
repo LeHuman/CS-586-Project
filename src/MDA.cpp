@@ -5,6 +5,7 @@
 
 MDA::MDA(OP *op) {
     Context_t *ctx = new Context_t();
+    
     Create_s *create_state = new Create_s(this, op, ctx);
     NoCups_s *no_cups_state = new NoCups_s(this, op, ctx);
     Idle_s *idle_state = new Idle_s(this, op, ctx);
@@ -15,7 +16,7 @@ MDA::MDA(OP *op) {
     states.push_back(idle_state);
     states.push_back(coins_inserted_state);
 
-    current = states[0];
+    change_state(CREATE);
 }
 
 MDA::~MDA() {
@@ -57,10 +58,10 @@ void MDA::set_price() {
     current->set_price();
 };
 
-void MDA::dispose_drink(int id) {
-    current->dispose_drink(id);
+void MDA::dispose_drink(int d) {
+    current->dispose_drink(d);
 };
 
-void MDA::additive(int id) {
-    current->additive(id);
+void MDA::additive(int d) {
+    current->additive(d);
 };

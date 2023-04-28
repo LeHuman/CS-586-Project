@@ -4,12 +4,11 @@
 #include "state/states.hpp"
 
 void CoinsInserted_s::coin(int f) {
-
     op->ReturnCoins();
 }
 
-void CoinsInserted_s::additive(int id) {
-    ctx->set_additive((additive_e)id);
+void CoinsInserted_s::additive(int d) {
+    ctx->set_additive((additive_e)d);
 
     std::cout << "List of Current Additives : ";
 
@@ -24,7 +23,7 @@ void CoinsInserted_s::additive(int id) {
     std::cout << std::endl;
 }
 
-void CoinsInserted_s::dispose_drink(int id) {
+void CoinsInserted_s::dispose_drink(int d) {
     if (ctx->get_cups() <= 1) {
         mda->change_state(NO_CUPS);
     } else {
@@ -32,7 +31,7 @@ void CoinsInserted_s::dispose_drink(int id) {
         op->ZeroCF();
         mda->change_state(IDLE);
     }
-    op->DisposeDrink(id);
+    op->DisposeDrink(d);
     op->DisposeAdditive(ctx->get_additives());
 }
 

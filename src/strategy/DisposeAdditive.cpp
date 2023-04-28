@@ -1,9 +1,9 @@
 #include <iostream>
 #include <utility>
 
-#include "../include/abstractFactory.hpp"
-#include "../include/VM.hpp"
-#include "../include/strategy/strategy.hpp"
+#include "../../include/VM.hpp"
+#include "../../include/factory/factory.hpp"
+#include "../../include/strategy/strategy.hpp"
 
 void DisposeAdditive_1::DisposeAdditive(std::set<int> A) {
     for (auto &add : A) {
