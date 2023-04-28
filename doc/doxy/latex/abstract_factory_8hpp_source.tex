@@ -1,0 +1,34 @@
+\hypertarget{abstract_factory_8hpp_source}{}\doxysection{abstract\+Factory.\+hpp}
+\label{abstract_factory_8hpp_source}\index{//wsl\$/Debian/home/bytewise/github/CS586\_Project/Part 2/include/factory/abstractFactory.hpp@{//wsl\$/Debian/home/bytewise/github/CS586\_Project/Part 2/include/factory/abstractFactory.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}../datastore/datastores.hpp"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}../strategy/strategy.hpp"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_abstract_factory}{AbstractFactory}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_data_store}{DataStore}}\ *cacheDS\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_store_price__t}{StorePrice\_t}}\ *cacheSP\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{class_zero_c_f__t}{ZeroCF\_t}}\ *cacheZCF\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_increase_c_f__t}{IncreaseCF\_t}}\ *cacheICF\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{class_return_coins__t}{ReturnCoins\_t}}\ *cacheRC\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_dispose_drink__t}{DisposeDrink\_t}}\ *cacheDD\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_dispose_additive__t}{DisposeAdditive\_t}}\ *cacheDA\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_abstract_factory}{AbstractFactory}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_abstract_factory}{\string~AbstractFactory}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_data_store}{DataStore}}\ *\mbox{\hyperlink{class_abstract_factory_a6e2b841a1c80de4a3e6884247c58eb33}{createDS}}()\ =\ 0;}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_store_price__t}{StorePrice\_t}}\ *\mbox{\hyperlink{class_abstract_factory_ab46d5cc8080bf32acfac3098d0fc3686}{createSP}}()\ =\ 0;}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_zero_c_f__t}{ZeroCF\_t}}\ *\mbox{\hyperlink{class_abstract_factory_afe4ae8cbac0bb6bf529aecbd0d039458}{createZCF}}()\ =\ 0;}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_increase_c_f__t}{IncreaseCF\_t}}\ *\mbox{\hyperlink{class_abstract_factory_a9632344b79becf66c15fdf2785dc263e}{createICF}}()\ =\ 0;}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_return_coins__t}{ReturnCoins\_t}}\ *\mbox{\hyperlink{class_abstract_factory_a5bf3b007c066956b0e0ec14c0425b847}{createRC}}()\ =\ 0;}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_dispose_drink__t}{DisposeDrink\_t}}\ *\mbox{\hyperlink{class_abstract_factory_afa1b4230acc3596536d131b5c09a826f}{createDD}}()\ =\ 0;}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_dispose_additive__t}{DisposeAdditive\_t}}\ *\mbox{\hyperlink{class_abstract_factory_a17ff6b4e60b7d1ad87ddd852548936af}{createDA}}()\ =\ 0;}
+\DoxyCodeLine{00066\ \};}
+
+\end{DoxyCode}

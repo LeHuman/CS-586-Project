@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_no_cups__s" xml:lang="en-US">
+<title>NoCups_s Class Reference</title>
+<indexterm><primary>NoCups_s</primary></indexterm>
+<para>
+
+<para>The NoCups state. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;noCups.hpp&gt;</computeroutput>
+</para>
+<para>
+Inherits State_t.</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_no_cups__s_1a1cc2edc73588502c9cbd4d0bb21bfdb5">coin</link> (int n) override</para>
+
+<para>Call this state&apos;s coin function. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_no_cups__s_1aee1d56561deaf092b25cfad522aa9f5b">insert_cups</link> (int n) override</para>
+
+<para>Call this state&apos;s insert_cups function. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>The NoCups state. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_no_cups__s_1a1cc2edc73588502c9cbd4d0bb21bfdb5"/><section>
+    <title>coin()</title>
+<indexterm><primary>coin</primary><secondary>NoCups_s</secondary></indexterm>
+<indexterm><primary>NoCups_s</primary><secondary>coin</secondary></indexterm>
+<para><computeroutput>void NoCups_s::coin (int n)<computeroutput>[override]</computeroutput></computeroutput></para><para>
+
+<para>Call this state&apos;s coin function. </para>
+</para>
+
+<para>Returns coins</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>f</entry><entry>
+<para>whether to accept the coins </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_no_cups__s_1aee1d56561deaf092b25cfad522aa9f5b"/><section>
+    <title>insert_cups()</title>
+<indexterm><primary>insert_cups</primary><secondary>NoCups_s</secondary></indexterm>
+<indexterm><primary>NoCups_s</primary><secondary>insert_cups</secondary></indexterm>
+<para><computeroutput>void NoCups_s::insert_cups (int n)<computeroutput>[override]</computeroutput></computeroutput></para><para>
+
+<para>Call this state&apos;s insert_cups function. </para>
+</para>
+
+<para>if n is &gt; 0 then it saves it to context and changes state to idle</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>n</entry><entry>
+<para>cups to insert </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/state/noCups.hpp//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/src/state/noCups.cpp</section>
+</section>

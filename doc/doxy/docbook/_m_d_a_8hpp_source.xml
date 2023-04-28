@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__m_d_a_8hpp_source" xml:lang="en-US">
+<title>MDA.hpp</title>
+<indexterm><primary>//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/MDA.hpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 
+3 <emphasis role="preprocessor">#include&#32;&lt;set&gt;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&lt;utility&gt;</emphasis>
+6 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+7 
+8 <emphasis role="preprocessor">#include&#32;&quot;OP.hpp&quot;</emphasis>
+9 <emphasis role="preprocessor">#include&#32;&quot;VM.hpp&quot;</emphasis>
+10 <emphasis role="preprocessor">#include&#32;&quot;state/states.hpp&quot;</emphasis>
+11 <emphasis role="preprocessor">#include&#32;&quot;strategy/strategy.hpp&quot;</emphasis>
+12 
+17 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_m_d_a">MDA</link>&#32;{
+18 <emphasis role="keyword">private</emphasis>:
+22 &#32;&#32;&#32;&#32;std::vector&lt;State_t&#32;*&gt;&#32;<link linkend="_class_m_d_a_1a79b59e72e37c6db12c8f3278d014045f">states</link>;
+26 &#32;&#32;&#32;&#32;State_t&#32;*<link linkend="_class_m_d_a_1a6f20f8e0227f1a9db0905f3bba2913c8">current_state</link>;
+27 
+28 <emphasis role="keyword">public</emphasis>:
+34 &#32;&#32;&#32;&#32;<link linkend="_class_m_d_a">MDA</link>(<link linkend="_class_o_p">OP</link>&#32;*op);
+35 
+39 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_m_d_a_1a49cdc05ef5f77581bf9b6c94f8f4ce5e">~MDA</link>();
+40 
+46 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_m_d_a_1ae5283d8e651b473d586fda5473fa47ae">change_state</link>(state_e&#32;stateID);
+47 
+51 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_m_d_a_1af229565eaeb10995e2c351be5c70a7b4">create</link>();
+52 
+58 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_m_d_a_1aeb04851c756395bdb9c290e4871f72c4">insert_cups</link>(<emphasis role="keywordtype">int</emphasis>&#32;n);
+59 
+65 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_m_d_a_1ae86747aa6c2b18da8a4a386ea8ddaf85">coin</link>(<emphasis role="keywordtype">int</emphasis>&#32;f);
+66 
+71 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_m_d_a_1a4aa5f4aae793c861a05ea1922ba2065d">card</link>();
+72 
+77 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_m_d_a_1acf0bc2d5e0969a07845bdb311890bbe5">cancel</link>();
+78 
+83 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_m_d_a_1a6b9ed65dfed87b684025d1bb67693f5f">set_price</link>();
+84 
+90 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_m_d_a_1a7191d63e5d75fc6cb5e1c254ab5cb0c4">dispose_drink</link>(<emphasis role="keywordtype">int</emphasis>&#32;d);
+91 
+97 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_m_d_a_1abb7dedfc1b8efee559392c39ce397383">additive</link>(<emphasis role="keywordtype">int</emphasis>&#32;d);
+98 };
+</programlisting></section>

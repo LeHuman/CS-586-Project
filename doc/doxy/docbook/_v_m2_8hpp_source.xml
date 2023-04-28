@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__v_m2_8hpp_source" xml:lang="en-US">
+<title>VM2.hpp</title>
+<indexterm><primary>//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/VM2.hpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 
+3 <emphasis role="preprocessor">#include&#32;&quot;MDA.hpp&quot;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&quot;VM.hpp&quot;</emphasis>
+5 
+9 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_v_m2">VM2</link>&#32;{
+10 <emphasis role="keyword">private</emphasis>:
+14 &#32;&#32;&#32;&#32;<link linkend="_class_abstract_factory">AbstractFactory</link>&#32;*<link linkend="_class_v_m2_1ad8a9cb894d220c5b5397d14ba697904a">af</link>;
+18 &#32;&#32;&#32;&#32;<link linkend="_class_m_d_a">MDA</link>&#32;*<link linkend="_class_v_m2_1aa2d8e71a1b284950d6dbd1b91b0b9939">mda</link>;
+22 &#32;&#32;&#32;&#32;<link linkend="_class_d_s__2">DS_2</link>&#32;*<link linkend="_class_v_m2_1a1b7548f9895e4039b373b1bc4449fd7d">ds</link>;
+23 
+24 <emphasis role="keyword">public</emphasis>:
+25 &#32;&#32;&#32;&#32;<link linkend="_class_v_m2">VM2</link>(<link linkend="_class_abstract_factory">AbstractFactory</link>&#32;*a,&#32;<link linkend="_class_m_d_a">MDA</link>&#32;*m);
+26 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_v_m2">~VM2</link>()&#32;{&#32;<emphasis role="keyword">delete</emphasis>&#32;<link linkend="_class_v_m2_1a1b7548f9895e4039b373b1bc4449fd7d">ds</link>;&#32;}
+27 
+33 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;CREATE(<emphasis role="keywordtype">float</emphasis>&#32;p);
+39 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_v_m2_1a89daf730a5059609f4bc541d9b7b48d8">COIN</link>(<emphasis role="keywordtype">int</emphasis>&#32;v);
+43 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_v_m2_1a914bccfcd13303e100c666ecaa1d1c88">SUGAR</link>();
+47 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_v_m2_1ab99424078516f5df993e7eb49cbb405f">CREAM</link>();
+51 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_v_m2_1a3e27e4634ba92a161d0410fe3f3dd657">COFFEE</link>();
+57 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_v_m2_1ad3158033aaa47a00d2bb29ccaa8e36ec">InsertCups</link>(<emphasis role="keywordtype">int</emphasis>&#32;n);
+63 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_v_m2_1a90c4a273fa58f59a0c94a9c20da3fcaa">SetPrice</link>(<emphasis role="keywordtype">int</emphasis>&#32;p);
+67 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_v_m2_1a88d9b52f2f9fdf20ae5423b35aaf196b">CANCEL</link>();
+68 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;CARD(<emphasis role="keywordtype">int</emphasis>&#32;x);
+69 };
+</programlisting></section>

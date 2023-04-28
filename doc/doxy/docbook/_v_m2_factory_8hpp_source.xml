@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__v_m2_factory_8hpp_source" xml:lang="en-US">
+<title>VM2Factory.hpp</title>
+<indexterm><primary>//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/factory/VM2Factory.hpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 
+3 <emphasis role="preprocessor">#include&#32;&quot;abstractFactory.hpp&quot;</emphasis>
+4 
+8 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_v_m2_factory">VM2Factory</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_abstract_factory">AbstractFactory</link>&#32;{
+9 <emphasis role="keyword">public</emphasis>:
+15 &#32;&#32;&#32;&#32;<link linkend="_class_data_store">DataStore</link>&#32;*<link linkend="_class_v_m2_factory_1a50b9a72106b7b2b6d23bafac1ce2487a">createDS</link>()&#32;<emphasis role="keyword">override</emphasis>;
+16 
+22 &#32;&#32;&#32;&#32;<link linkend="_class_store_price__t">StorePrice_t</link>&#32;*<link linkend="_class_v_m2_factory_1adac3a5668b0f79b642410fb32e780995">createSP</link>()&#32;<emphasis role="keyword">override</emphasis>;
+23 
+29 &#32;&#32;&#32;&#32;<link linkend="_class_zero_c_f__t">ZeroCF_t</link>&#32;*<link linkend="_class_v_m2_factory_1adc4c249dedf70fc54a0cab17ef298036">createZCF</link>()&#32;<emphasis role="keyword">override</emphasis>;
+30 
+36 &#32;&#32;&#32;&#32;<link linkend="_class_increase_c_f__t">IncreaseCF_t</link>&#32;*<link linkend="_class_v_m2_factory_1adf7830e20878f6894bc60e9fb03fefae">createICF</link>()&#32;<emphasis role="keyword">override</emphasis>;
+37 
+43 &#32;&#32;&#32;&#32;<link linkend="_class_return_coins__t">ReturnCoins_t</link>&#32;*<link linkend="_class_v_m2_factory_1af59495fe77bfcb68b6fe7f2df3ce9549">createRC</link>()&#32;<emphasis role="keyword">override</emphasis>;
+44 
+50 &#32;&#32;&#32;&#32;<link linkend="_class_dispose_drink__t">DisposeDrink_t</link>&#32;*<link linkend="_class_v_m2_factory_1a62895611e9a3626808bcdb23f18ed65d">createDD</link>()&#32;<emphasis role="keyword">override</emphasis>;
+51 
+57 &#32;&#32;&#32;&#32;<link linkend="_class_dispose_additive__t">DisposeAdditive_t</link>&#32;*<link linkend="_class_v_m2_factory_1acff553d8965305ea0fd54eb97aaf1a34">createDA</link>()&#32;<emphasis role="keyword">override</emphasis>;
+58 };
+</programlisting></section>

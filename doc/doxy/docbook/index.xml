@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>CS586_Project</title>
+    </info>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="class_abstract_factory.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_coins_inserted__s.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_context__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_create__s.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_data_store.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_dispose_additive__1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_dispose_additive__2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_dispose_additive__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_dispose_drink__1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_dispose_drink__2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_dispose_drink__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_d_s__1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_d_s__2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_idle__s.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_increase_c_f___float.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_increase_c_f___int.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_increase_c_f__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_m_d_a.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_no_cups__s.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_o_p.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_return_coins___float.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_return_coins___int.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_return_coins__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_store_price___float.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_store_price___int.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_store_price__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_v_m1.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_v_m1_factory.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_v_m2.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_v_m2_factory.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_zero_c_f___float.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_zero_c_f___int.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_zero_c_f__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="datastore_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="datastores_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_d_s__1_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_d_s__2_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="abstract_factory_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="factory_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_v_m1_factory_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_v_m2_factory_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_m_d_a_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_o_p_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="coins_inserted_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="create_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="idle_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="no_cups_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="state_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="states_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_dispose_additive_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_dispose_drink_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_increase_c_f_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_return_coins_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_store_price_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="strategy_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_zero_c_f_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_v_m_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_v_m1_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_v_m2_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="driver_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

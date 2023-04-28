@@ -1,0 +1,25 @@
+\hypertarget{_store_price_8hpp_source}{}\doxysection{Store\+Price.\+hpp}
+\label{_store_price_8hpp_source}\index{//wsl\$/Debian/home/bytewise/github/CS586\_Project/Part 2/include/strategy/StorePrice.hpp@{//wsl\$/Debian/home/bytewise/github/CS586\_Project/Part 2/include/strategy/StorePrice.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}../datastore/datastores.hpp"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_store_price__t}{StorePrice\_t}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_store_price__t}{\string~StorePrice\_t}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ StorePrice(\mbox{\hyperlink{class_data_store}{DataStore}}\ *ds)\ =\ 0;}
+\DoxyCodeLine{00012\ \};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_store_price___int}{StorePrice\_Int}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_store_price__t}{StorePrice\_t}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ StorePrice(\mbox{\hyperlink{class_data_store}{DataStore}}\ *ds)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00020\ \};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_store_price___float}{StorePrice\_Float}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_store_price__t}{StorePrice\_t}}\ \{}
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ StorePrice(\mbox{\hyperlink{class_data_store}{DataStore}}\ *ds)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ \};}
+
+\end{DoxyCode}

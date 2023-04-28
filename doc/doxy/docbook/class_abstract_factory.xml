@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_abstract_factory" xml:lang="en-US">
+<title>AbstractFactory Class Reference</title>
+<indexterm><primary>AbstractFactory</primary></indexterm>
+<para>
+
+<para>Abstract class for VM factory objects. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;abstractFactory.hpp&gt;</computeroutput>
+</para>
+<para>
+Inherited by <link linkend="_class_v_m1_factory">VM1Factory</link>, and <link linkend="_class_v_m2_factory">VM2Factory</link>.</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>virtual <link linkend="_class_data_store">DataStore</link> * <link linkend="_class_abstract_factory_1a6e2b841a1c80de4a3e6884247c58eb33">createDS</link> ()=0</para>
+
+<para>returns a specific object from this factory </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_class_store_price__t">StorePrice_t</link> * <link linkend="_class_abstract_factory_1ab46d5cc8080bf32acfac3098d0fc3686">createSP</link> ()=0</para>
+
+<para>returns a specific object from this factory </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_class_zero_c_f__t">ZeroCF_t</link> * <link linkend="_class_abstract_factory_1afe4ae8cbac0bb6bf529aecbd0d039458">createZCF</link> ()=0</para>
+
+<para>returns a specific object from this factory </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_class_increase_c_f__t">IncreaseCF_t</link> * <link linkend="_class_abstract_factory_1a9632344b79becf66c15fdf2785dc263e">createICF</link> ()=0</para>
+
+<para>returns a specific object from this factory </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_class_return_coins__t">ReturnCoins_t</link> * <link linkend="_class_abstract_factory_1a5bf3b007c066956b0e0ec14c0425b847">createRC</link> ()=0</para>
+
+<para>returns a specific object from this factory </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_class_dispose_drink__t">DisposeDrink_t</link> * <link linkend="_class_abstract_factory_1afa1b4230acc3596536d131b5c09a826f">createDD</link> ()=0</para>
+
+<para>returns a specific object from this factory </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_class_dispose_additive__t">DisposeAdditive_t</link> * <link linkend="_class_abstract_factory_1a17ff6b4e60b7d1ad87ddd852548936af">createDA</link> ()=0</para>
+
+<para>returns a specific object from this factory </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Abstract class for VM factory objects. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_abstract_factory_1a6e2b841a1c80de4a3e6884247c58eb33"/><section>
+    <title>createDS()</title>
+<indexterm><primary>createDS</primary><secondary>AbstractFactory</secondary></indexterm>
+<indexterm><primary>AbstractFactory</primary><secondary>createDS</secondary></indexterm>
+<para><computeroutput>virtual <link linkend="_class_data_store">DataStore</link> * AbstractFactory::createDS ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>returns a specific object from this factory </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>DataStore* factory specific object </para>
+</formalpara>
+</para>
+<para>
+Implemented in <link linkend="_class_v_m1_factory_1a3560c6f349b2ead5bfcdae1ad3cb421f">VM1Factory</link>, and <link linkend="_class_v_m2_factory_1a50b9a72106b7b2b6d23bafac1ce2487a">VM2Factory</link>.</para>
+</section>
+<anchor xml:id="_class_abstract_factory_1ab46d5cc8080bf32acfac3098d0fc3686"/><section>
+    <title>createSP()</title>
+<indexterm><primary>createSP</primary><secondary>AbstractFactory</secondary></indexterm>
+<indexterm><primary>AbstractFactory</primary><secondary>createSP</secondary></indexterm>
+<para><computeroutput>virtual <link linkend="_class_store_price__t">StorePrice_t</link> * AbstractFactory::createSP ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>returns a specific object from this factory </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>StorePrice_t* factory specific object </para>
+</formalpara>
+</para>
+<para>
+Implemented in <link linkend="_class_v_m1_factory_1ad66a67137f46d6f0aa7423add1c3ce08">VM1Factory</link>, and <link linkend="_class_v_m2_factory_1adac3a5668b0f79b642410fb32e780995">VM2Factory</link>.</para>
+</section>
+<anchor xml:id="_class_abstract_factory_1afe4ae8cbac0bb6bf529aecbd0d039458"/><section>
+    <title>createZCF()</title>
+<indexterm><primary>createZCF</primary><secondary>AbstractFactory</secondary></indexterm>
+<indexterm><primary>AbstractFactory</primary><secondary>createZCF</secondary></indexterm>
+<para><computeroutput>virtual <link linkend="_class_zero_c_f__t">ZeroCF_t</link> * AbstractFactory::createZCF ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>returns a specific object from this factory </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>ZeroCF_t* factory specific object </para>
+</formalpara>
+</para>
+<para>
+Implemented in <link linkend="_class_v_m1_factory_1ac2a7baf71de20baa11fc063022fc7f6c">VM1Factory</link>, and <link linkend="_class_v_m2_factory_1adc4c249dedf70fc54a0cab17ef298036">VM2Factory</link>.</para>
+</section>
+<anchor xml:id="_class_abstract_factory_1a9632344b79becf66c15fdf2785dc263e"/><section>
+    <title>createICF()</title>
+<indexterm><primary>createICF</primary><secondary>AbstractFactory</secondary></indexterm>
+<indexterm><primary>AbstractFactory</primary><secondary>createICF</secondary></indexterm>
+<para><computeroutput>virtual <link linkend="_class_increase_c_f__t">IncreaseCF_t</link> * AbstractFactory::createICF ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>returns a specific object from this factory </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>IncreaseCF_t* factory specific object </para>
+</formalpara>
+</para>
+<para>
+Implemented in <link linkend="_class_v_m1_factory_1a28fda6586bc0bac236ac819156bee3de">VM1Factory</link>, and <link linkend="_class_v_m2_factory_1adf7830e20878f6894bc60e9fb03fefae">VM2Factory</link>.</para>
+</section>
+<anchor xml:id="_class_abstract_factory_1a5bf3b007c066956b0e0ec14c0425b847"/><section>
+    <title>createRC()</title>
+<indexterm><primary>createRC</primary><secondary>AbstractFactory</secondary></indexterm>
+<indexterm><primary>AbstractFactory</primary><secondary>createRC</secondary></indexterm>
+<para><computeroutput>virtual <link linkend="_class_return_coins__t">ReturnCoins_t</link> * AbstractFactory::createRC ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>returns a specific object from this factory </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>ReturnCoins_t* factory specific object </para>
+</formalpara>
+</para>
+<para>
+Implemented in <link linkend="_class_v_m1_factory_1a7f833678de4a57d8f781a5aa34818cbb">VM1Factory</link>, and <link linkend="_class_v_m2_factory_1af59495fe77bfcb68b6fe7f2df3ce9549">VM2Factory</link>.</para>
+</section>
+<anchor xml:id="_class_abstract_factory_1afa1b4230acc3596536d131b5c09a826f"/><section>
+    <title>createDD()</title>
+<indexterm><primary>createDD</primary><secondary>AbstractFactory</secondary></indexterm>
+<indexterm><primary>AbstractFactory</primary><secondary>createDD</secondary></indexterm>
+<para><computeroutput>virtual <link linkend="_class_dispose_drink__t">DisposeDrink_t</link> * AbstractFactory::createDD ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>returns a specific object from this factory </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>DisposeDrink_t* factory specific object </para>
+</formalpara>
+</para>
+<para>
+Implemented in <link linkend="_class_v_m1_factory_1acc21e4653e2d95cfd5a0070a2c148658">VM1Factory</link>, and <link linkend="_class_v_m2_factory_1a62895611e9a3626808bcdb23f18ed65d">VM2Factory</link>.</para>
+</section>
+<anchor xml:id="_class_abstract_factory_1a17ff6b4e60b7d1ad87ddd852548936af"/><section>
+    <title>createDA()</title>
+<indexterm><primary>createDA</primary><secondary>AbstractFactory</secondary></indexterm>
+<indexterm><primary>AbstractFactory</primary><secondary>createDA</secondary></indexterm>
+<para><computeroutput>virtual <link linkend="_class_dispose_additive__t">DisposeAdditive_t</link> * AbstractFactory::createDA ( )<computeroutput>[pure virtual]</computeroutput></computeroutput></para><para>
+
+<para>returns a specific object from this factory </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>DisposeAdditive_t* factory specific object </para>
+</formalpara>
+</para>
+<para>
+Implemented in <link linkend="_class_v_m1_factory_1a99cea712d43322bf31116966b282b39a">VM1Factory</link>, and <link linkend="_class_v_m2_factory_1acff553d8965305ea0fd54eb97aaf1a34">VM2Factory</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/factory/abstractFactory.hpp</section>
+</section>

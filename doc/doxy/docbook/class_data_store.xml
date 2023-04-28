@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_data_store" xml:lang="en-US">
+<title>DataStore Class Reference</title>
+<indexterm><primary>DataStore</primary></indexterm>
+<para>
+
+<para>The abstract datastore class for data storage. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;datastore.hpp&gt;</computeroutput>
+</para>
+<para>
+Inherited by <link linkend="_class_d_s__1">DS_1</link>, and <link linkend="_class_d_s__2">DS_2</link>.</para>
+<section>
+<title>Detailed Description</title>
+
+<para>The abstract datastore class for data storage. </para>
+
+
+<para>
+The documentation for this class was generated from the following file:</para>
+//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/datastore/datastore.hpp</section>
+</section>

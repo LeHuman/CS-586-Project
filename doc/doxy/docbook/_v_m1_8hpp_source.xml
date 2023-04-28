@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__v_m1_8hpp_source" xml:lang="en-US">
+<title>VM1.hpp</title>
+<indexterm><primary>//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/VM1.hpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 
+3 <emphasis role="preprocessor">#include&#32;&quot;MDA.hpp&quot;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&quot;VM.hpp&quot;</emphasis>
+5 
+9 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_v_m1">VM1</link>&#32;{
+10 <emphasis role="keyword">private</emphasis>:
+14 &#32;&#32;&#32;&#32;<link linkend="_class_abstract_factory">AbstractFactory</link>&#32;*<link linkend="_class_v_m1_1a1b9fc808ed4ac200b04a7c55831e90d8">af</link>;
+18 &#32;&#32;&#32;&#32;<link linkend="_class_m_d_a">MDA</link>&#32;*<link linkend="_class_v_m1_1a955b4190a15342690a0d582feb078c4f">mda</link>;
+22 &#32;&#32;&#32;&#32;<link linkend="_class_d_s__1">DS_1</link>&#32;*<link linkend="_class_v_m1_1a7ef0688209eb4545ca2e5e153317bf36">ds</link>;
+23 
+24 <emphasis role="keyword">public</emphasis>:
+25 &#32;&#32;&#32;&#32;<link linkend="_class_v_m1">VM1</link>(<link linkend="_class_abstract_factory">AbstractFactory</link>&#32;*a,&#32;<link linkend="_class_m_d_a">MDA</link>&#32;*m);
+26 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_v_m1">~VM1</link>()&#32;{&#32;<emphasis role="keyword">delete</emphasis>&#32;<link linkend="_class_v_m1_1a7ef0688209eb4545ca2e5e153317bf36">ds</link>;&#32;}
+27 
+33 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_v_m1_1a763a34ed0b67fee701a3ddd1e6b7afb4">create</link>(<emphasis role="keywordtype">int</emphasis>&#32;p);
+39 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_v_m1_1ab86badfd17095d04bdda595e5f574c58">coin</link>(<emphasis role="keywordtype">float</emphasis>&#32;v);
+43 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_v_m1_1abc7ecba8545895a69f9c65149f387d57">sugar</link>();
+47 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_v_m1_1a16558c70af46909599f72e6db858ade1">tea</link>();
+51 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_v_m1_1afe847ee65017800c08b3a43960a692ea">latte</link>();
+57 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_v_m1_1abc770116c3ba84630e4a2b5bf18357e6">insert_cups</link>(<emphasis role="keywordtype">int</emphasis>&#32;n);
+63 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_v_m1_1affbb9fb6f70a6d550d17861c4989fcf6">set_price</link>(<emphasis role="keywordtype">float</emphasis>&#32;p);
+67 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_v_m1_1afb84043264a38e2225734ffc564fd5b2">cancel</link>();
+68 };
+</programlisting></section>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_abstract_factory_8hpp_source" xml:lang="en-US">
+<title>abstractFactory.hpp</title>
+<indexterm><primary>//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/factory/abstractFactory.hpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 
+3 <emphasis role="preprocessor">#include&#32;&quot;../datastore/datastores.hpp&quot;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&quot;../strategy/strategy.hpp&quot;</emphasis>
+5 
+9 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_abstract_factory">AbstractFactory</link>&#32;{
+10 <emphasis role="keyword">protected</emphasis>:
+11 &#32;&#32;&#32;&#32;<link linkend="_class_data_store">DataStore</link>&#32;*cacheDS&#32;=&#32;<emphasis role="keyword">nullptr</emphasis>;
+12 &#32;&#32;&#32;&#32;<link linkend="_class_store_price__t">StorePrice_t</link>&#32;*cacheSP&#32;=&#32;<emphasis role="keyword">nullptr</emphasis>;
+13 &#32;&#32;&#32;&#32;<link linkend="_class_zero_c_f__t">ZeroCF_t</link>&#32;*cacheZCF&#32;=&#32;<emphasis role="keyword">nullptr</emphasis>;
+14 &#32;&#32;&#32;&#32;<link linkend="_class_increase_c_f__t">IncreaseCF_t</link>&#32;*cacheICF&#32;=&#32;<emphasis role="keyword">nullptr</emphasis>;
+15 &#32;&#32;&#32;&#32;<link linkend="_class_return_coins__t">ReturnCoins_t</link>&#32;*cacheRC&#32;=&#32;<emphasis role="keyword">nullptr</emphasis>;
+16 &#32;&#32;&#32;&#32;<link linkend="_class_dispose_drink__t">DisposeDrink_t</link>&#32;*cacheDD&#32;=&#32;<emphasis role="keyword">nullptr</emphasis>;
+17 &#32;&#32;&#32;&#32;<link linkend="_class_dispose_additive__t">DisposeAdditive_t</link>&#32;*cacheDA&#32;=&#32;<emphasis role="keyword">nullptr</emphasis>;
+18 
+19 <emphasis role="keyword">public</emphasis>:
+20 &#32;&#32;&#32;&#32;<link linkend="_class_abstract_factory">AbstractFactory</link>()&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+21 
+22 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_abstract_factory">~AbstractFactory</link>()&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+23 
+29 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_data_store">DataStore</link>&#32;*<link linkend="_class_abstract_factory_1a6e2b841a1c80de4a3e6884247c58eb33">createDS</link>()&#32;=&#32;0;
+35 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_store_price__t">StorePrice_t</link>&#32;*<link linkend="_class_abstract_factory_1ab46d5cc8080bf32acfac3098d0fc3686">createSP</link>()&#32;=&#32;0;
+41 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_zero_c_f__t">ZeroCF_t</link>&#32;*<link linkend="_class_abstract_factory_1afe4ae8cbac0bb6bf529aecbd0d039458">createZCF</link>()&#32;=&#32;0;
+47 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_increase_c_f__t">IncreaseCF_t</link>&#32;*<link linkend="_class_abstract_factory_1a9632344b79becf66c15fdf2785dc263e">createICF</link>()&#32;=&#32;0;
+53 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_return_coins__t">ReturnCoins_t</link>&#32;*<link linkend="_class_abstract_factory_1a5bf3b007c066956b0e0ec14c0425b847">createRC</link>()&#32;=&#32;0;
+59 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_dispose_drink__t">DisposeDrink_t</link>&#32;*<link linkend="_class_abstract_factory_1afa1b4230acc3596536d131b5c09a826f">createDD</link>()&#32;=&#32;0;
+65 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_dispose_additive__t">DisposeAdditive_t</link>&#32;*<link linkend="_class_abstract_factory_1a17ff6b4e60b7d1ad87ddd852548936af">createDA</link>()&#32;=&#32;0;
+66 };
+</programlisting></section>

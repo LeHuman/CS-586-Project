@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_coins_inserted_8hpp_source" xml:lang="en-US">
+<title>coinsInserted.hpp</title>
+<indexterm><primary>//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/state/coinsInserted.hpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 
+3 <emphasis role="preprocessor">#include&#32;&quot;state.hpp&quot;</emphasis>
+4 
+8 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_coins_inserted__s">CoinsInserted_s</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;State_t&#32;{
+9 <emphasis role="keyword">public</emphasis>:
+10 &#32;&#32;&#32;&#32;<link linkend="_class_coins_inserted__s">CoinsInserted_s</link>(<link linkend="_class_m_d_a">MDA</link>&#32;*mda,&#32;<link linkend="_class_o_p">OP</link>&#32;*o,&#32;<link linkend="_class_context__t">Context_t</link>&#32;*ctx)&#32;:&#32;State_t(mda,&#32;o,&#32;ctx){};
+11 
+12 &#32;&#32;&#32;&#32;<link linkend="_class_coins_inserted__s">~CoinsInserted_s</link>()&#32;<emphasis role="keyword">override</emphasis>&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+13 
+21 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_coins_inserted__s_1afe23fa8707a6b9c995ea15fc68b685b9">coin</link>(<emphasis role="keywordtype">int</emphasis>&#32;f)&#32;<emphasis role="keyword">override</emphasis>;
+22 
+28 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_coins_inserted__s_1a3d6ad50db87b1ffd1fe89b0d7ca4a850">cancel</link>()&#32;<emphasis role="keyword">override</emphasis>;
+29 
+37 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_coins_inserted__s_1a1d0b862ee650e32c5c26bcb77453b499">dispose_drink</link>(<emphasis role="keywordtype">int</emphasis>&#32;d)&#32;<emphasis role="keyword">override</emphasis>;
+38 
+46 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_coins_inserted__s_1a878a8cf5d745a2d84e0e8357a9cdc548">additive</link>(<emphasis role="keywordtype">int</emphasis>&#32;d)&#32;<emphasis role="keyword">override</emphasis>;
+47 };
+</programlisting></section>

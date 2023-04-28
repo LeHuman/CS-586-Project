@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_coins_inserted__s" xml:lang="en-US">
+<title>CoinsInserted_s Class Reference</title>
+<indexterm><primary>CoinsInserted_s</primary></indexterm>
+<para>
+
+<para>The CoinsInserted state. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;coinsInserted.hpp&gt;</computeroutput>
+</para>
+<para>
+Inherits State_t.</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_coins_inserted__s_1afe23fa8707a6b9c995ea15fc68b685b9">coin</link> (int f) override</para>
+
+<para>Call this state&apos;s coin function. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_coins_inserted__s_1a3d6ad50db87b1ffd1fe89b0d7ca4a850">cancel</link> () override</para>
+
+<para>Call this state&apos;s cancel function. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_coins_inserted__s_1a1d0b862ee650e32c5c26bcb77453b499">dispose_drink</link> (int d) override</para>
+
+<para>Call this state&apos;s dispose_drink function. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_coins_inserted__s_1a878a8cf5d745a2d84e0e8357a9cdc548">additive</link> (int d) override</para>
+
+<para>Call this state&apos;s additive function. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>The CoinsInserted state. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_coins_inserted__s_1afe23fa8707a6b9c995ea15fc68b685b9"/><section>
+    <title>coin()</title>
+<indexterm><primary>coin</primary><secondary>CoinsInserted_s</secondary></indexterm>
+<indexterm><primary>CoinsInserted_s</primary><secondary>coin</secondary></indexterm>
+<para><computeroutput>void CoinsInserted_s::coin (int f)<computeroutput>[override]</computeroutput></computeroutput></para><para>
+
+<para>Call this state&apos;s coin function. </para>
+</para>
+
+<para>returns coins</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>f</entry><entry>
+<para>whether to accept the coins </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_coins_inserted__s_1a3d6ad50db87b1ffd1fe89b0d7ca4a850"/><section>
+    <title>cancel()</title>
+<indexterm><primary>cancel</primary><secondary>CoinsInserted_s</secondary></indexterm>
+<indexterm><primary>CoinsInserted_s</primary><secondary>cancel</secondary></indexterm>
+<para><computeroutput>void CoinsInserted_s::cancel ( )<computeroutput>[override]</computeroutput></computeroutput></para><para>
+
+<para>Call this state&apos;s cancel function. </para>
+</para>
+
+<para>returns coins, zeros funds, and changes state to Idle </para>
+</section>
+<anchor xml:id="_class_coins_inserted__s_1a1d0b862ee650e32c5c26bcb77453b499"/><section>
+    <title>dispose_drink()</title>
+<indexterm><primary>dispose_drink</primary><secondary>CoinsInserted_s</secondary></indexterm>
+<indexterm><primary>CoinsInserted_s</primary><secondary>dispose_drink</secondary></indexterm>
+<para><computeroutput>void CoinsInserted_s::dispose_drink (int d)<computeroutput>[override]</computeroutput></computeroutput></para><para>
+
+<para>Call this state&apos;s dispose_drink function. </para>
+</para>
+
+<para>disposes drink and additives, changes state to NO_CUPS if cups are &lt;= 1, else zero funds and change state to IDLE state</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>d</entry><entry>
+<para>drink enum as int </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_coins_inserted__s_1a878a8cf5d745a2d84e0e8357a9cdc548"/><section>
+    <title>additive()</title>
+<indexterm><primary>additive</primary><secondary>CoinsInserted_s</secondary></indexterm>
+<indexterm><primary>CoinsInserted_s</primary><secondary>additive</secondary></indexterm>
+<para><computeroutput>void CoinsInserted_s::additive (int d)<computeroutput>[override]</computeroutput></computeroutput></para><para>
+
+<para>Call this state&apos;s additive function. </para>
+</para>
+
+<para>Toggles an additive to be output with drink</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>d</entry><entry>
+<para>additive enum as int </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/state/coinsInserted.hpp//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/src/state/coinsInserted.cpp</section>
+</section>

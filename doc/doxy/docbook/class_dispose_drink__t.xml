@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_dispose_drink__t" xml:lang="en-US">
+<title>DisposeDrink_t Class Reference</title>
+<indexterm><primary>DisposeDrink_t</primary></indexterm>
+<para>
+
+<para>Abstract strategy class for DisposeDrink function. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;DisposeDrink.hpp&gt;</computeroutput>
+</para>
+<para>
+Inherited by <link linkend="_class_dispose_drink__1">DisposeDrink_1</link>, and <link linkend="_class_dispose_drink__2">DisposeDrink_2</link>.</para>
+<section>
+<title>Detailed Description</title>
+
+<para>Abstract strategy class for DisposeDrink function. </para>
+<para>
+The documentation for this class was generated from the following file:</para>
+//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/strategy/DisposeDrink.hpp</section>
+</section>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__zero_c_f_8hpp_source" xml:lang="en-US">
+<title>ZeroCF.hpp</title>
+<indexterm><primary>//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/strategy/ZeroCF.hpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 
+3 <emphasis role="preprocessor">#include&#32;&quot;../datastore/datastores.hpp&quot;</emphasis>
+4 
+8 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_zero_c_f__t">ZeroCF_t</link>&#32;{
+9 <emphasis role="keyword">public</emphasis>:
+10 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_zero_c_f__t">~ZeroCF_t</link>()&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+11 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;ZeroCF(<link linkend="_class_data_store">DataStore</link>&#32;*ds)&#32;=&#32;0;
+12 };
+13 
+17 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_zero_c_f___int">ZeroCF_Int</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_zero_c_f__t">ZeroCF_t</link>&#32;{
+18 <emphasis role="keyword">public</emphasis>:
+19 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;ZeroCF(<link linkend="_class_data_store">DataStore</link>&#32;*ds)&#32;<emphasis role="keyword">override</emphasis>;
+20 };
+21 
+25 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_zero_c_f___float">ZeroCF_Float</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_zero_c_f__t">ZeroCF_t</link>&#32;{
+26 <emphasis role="keyword">public</emphasis>:
+27 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;ZeroCF(<link linkend="_class_data_store">DataStore</link>&#32;*ds)&#32;<emphasis role="keyword">override</emphasis>;
+28 };
+</programlisting></section>

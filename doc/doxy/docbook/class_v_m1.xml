@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_v_m1" xml:lang="en-US">
+<title>VM1 Class Reference</title>
+<indexterm><primary>VM1</primary></indexterm>
+<para>
+
+<para>User Interface for <link linkend="_class_v_m1">VM1</link>. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;VM1.hpp&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_v_m1_1a763a34ed0b67fee701a3ddd1e6b7afb4">create</link> (int p)</para>
+
+<para>Create a new instance, and set inital price. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_v_m1_1ab86badfd17095d04bdda595e5f574c58">coin</link> (float v)</para>
+
+<para>insert coins </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_v_m1_1abc7ecba8545895a69f9c65149f387d57"/>void <emphasis role="strong">sugar</emphasis> ()</para>
+
+<para>Request sugar as an additive. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_v_m1_1a16558c70af46909599f72e6db858ade1"/>void <emphasis role="strong">tea</emphasis> ()</para>
+
+<para>Request tea to be disposed. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_v_m1_1afe847ee65017800c08b3a43960a692ea"/>void <emphasis role="strong">latte</emphasis> ()</para>
+
+<para>Request latte to be disposed. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_v_m1_1abc770116c3ba84630e4a2b5bf18357e6">insert_cups</link> (int n)</para>
+
+<para>Request to insert cups. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_v_m1_1affbb9fb6f70a6d550d17861c4989fcf6">set_price</link> (float p)</para>
+
+<para>Request a price change of a drink. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_v_m1_1afb84043264a38e2225734ffc564fd5b2"/>void <emphasis role="strong">cancel</emphasis> ()</para>
+
+<para>Request cancellation of current selection. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_v_m1_1a1b9fc808ed4ac200b04a7c55831e90d8"/><link linkend="_class_abstract_factory">AbstractFactory</link> * <emphasis role="strong">af</emphasis></para>
+
+<para>The factory to use. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_v_m1_1a955b4190a15342690a0d582feb078c4f"/><link linkend="_class_m_d_a">MDA</link> * <emphasis role="strong">mda</emphasis></para>
+
+<para>The <link linkend="_class_m_d_a">MDA</link> object. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_v_m1_1a7ef0688209eb4545ca2e5e153317bf36"/><link linkend="_class_d_s__1">DS_1</link> * <emphasis role="strong">ds</emphasis></para>
+
+<para>The appropiate Datastore. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>User Interface for <link linkend="_class_v_m1">VM1</link>. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_v_m1_1a763a34ed0b67fee701a3ddd1e6b7afb4"/><section>
+    <title>create()</title>
+<indexterm><primary>create</primary><secondary>VM1</secondary></indexterm>
+<indexterm><primary>VM1</primary><secondary>create</secondary></indexterm>
+<para><computeroutput>void VM1::create (int p)</computeroutput></para><para>
+
+<para>Create a new instance, and set inital price. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>p</entry><entry>
+<para>inital price </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_v_m1_1ab86badfd17095d04bdda595e5f574c58"/><section>
+    <title>coin()</title>
+<indexterm><primary>coin</primary><secondary>VM1</secondary></indexterm>
+<indexterm><primary>VM1</primary><secondary>coin</secondary></indexterm>
+<para><computeroutput>void VM1::coin (float v)</computeroutput></para><para>
+
+<para>insert coins </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>v</entry><entry>
+<para>coins to insert </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_v_m1_1abc770116c3ba84630e4a2b5bf18357e6"/><section>
+    <title>insert_cups()</title>
+<indexterm><primary>insert_cups</primary><secondary>VM1</secondary></indexterm>
+<indexterm><primary>VM1</primary><secondary>insert_cups</secondary></indexterm>
+<para><computeroutput>void VM1::insert_cups (int n)</computeroutput></para><para>
+
+<para>Request to insert cups. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>n</entry><entry>
+<para>cups to insert </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_v_m1_1affbb9fb6f70a6d550d17861c4989fcf6"/><section>
+    <title>set_price()</title>
+<indexterm><primary>set_price</primary><secondary>VM1</secondary></indexterm>
+<indexterm><primary>VM1</primary><secondary>set_price</secondary></indexterm>
+<para><computeroutput>void VM1::set_price (float p)</computeroutput></para><para>
+
+<para>Request a price change of a drink. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>p</entry><entry>
+<para>price to set </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/VM1.hpp//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/src/VM/VM1.cpp</section>
+</section>

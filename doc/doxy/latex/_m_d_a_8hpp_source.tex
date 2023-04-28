@@ -1,0 +1,46 @@
+\hypertarget{_m_d_a_8hpp_source}{}\doxysection{MDA.\+hpp}
+\label{_m_d_a_8hpp_source}\index{//wsl\$/Debian/home/bytewise/github/CS586\_Project/Part 2/include/MDA.hpp@{//wsl\$/Debian/home/bytewise/github/CS586\_Project/Part 2/include/MDA.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}OP.hpp"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}VM.hpp"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}state/states.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}strategy/strategy.hpp"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_m_d_a}{MDA}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ std::vector<State\_t\ *>\ \mbox{\hyperlink{class_m_d_a_a79b59e72e37c6db12c8f3278d014045f}{states}};}
+\DoxyCodeLine{00026\ \ \ \ \ State\_t\ *\mbox{\hyperlink{class_m_d_a_a6f20f8e0227f1a9db0905f3bba2913c8}{current\_state}};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_m_d_a}{MDA}}(\mbox{\hyperlink{class_o_p}{OP}}\ *op);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_m_d_a_a49cdc05ef5f77581bf9b6c94f8f4ce5e}{\string~MDA}}();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_m_d_a_ae5283d8e651b473d586fda5473fa47ae}{change\_state}}(state\_e\ stateID);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_m_d_a_af229565eaeb10995e2c351be5c70a7b4}{create}}();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_m_d_a_aeb04851c756395bdb9c290e4871f72c4}{insert\_cups}}(\textcolor{keywordtype}{int}\ n);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_m_d_a_ae86747aa6c2b18da8a4a386ea8ddaf85}{coin}}(\textcolor{keywordtype}{int}\ f);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_m_d_a_a4aa5f4aae793c861a05ea1922ba2065d}{card}}();}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_m_d_a_acf0bc2d5e0969a07845bdb311890bbe5}{cancel}}();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_m_d_a_a6b9ed65dfed87b684025d1bb67693f5f}{set\_price}}();}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_m_d_a_a7191d63e5d75fc6cb5e1c254ab5cb0c4}{dispose\_drink}}(\textcolor{keywordtype}{int}\ d);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_m_d_a_abb7dedfc1b8efee559392c39ce397383}{additive}}(\textcolor{keywordtype}{int}\ d);}
+\DoxyCodeLine{00098\ \};}
+
+\end{DoxyCode}

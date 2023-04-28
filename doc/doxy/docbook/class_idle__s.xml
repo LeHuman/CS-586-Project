@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_idle__s" xml:lang="en-US">
+<title>Idle_s Class Reference</title>
+<indexterm><primary>Idle_s</primary></indexterm>
+<para>
+
+<para>The Idle state. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;idle.hpp&gt;</computeroutput>
+</para>
+<para>
+Inherits State_t.</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_idle__s_1af67b561f64720e143c2ee33bda202a8f">coin</link> (int f) override</para>
+
+<para>Call this state&apos;s coin function. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_idle__s_1aece9ae0d9bb0cc97f6e8d8be7f965837">insert_cups</link> (int n) override</para>
+
+<para>Call this state&apos;s insert_cups function. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_idle__s_1a79aa30f2b98addffd3046c5d9ba8d2d1">set_price</link> () override</para>
+
+<para>Call this state&apos;s set_price function. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_idle__s_1adfb198c66c46b336b9265e434a69d66d">card</link> () override</para>
+
+<para>Call this state&apos;s card function. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>The Idle state. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_idle__s_1af67b561f64720e143c2ee33bda202a8f"/><section>
+    <title>coin()</title>
+<indexterm><primary>coin</primary><secondary>Idle_s</secondary></indexterm>
+<indexterm><primary>Idle_s</primary><secondary>coin</secondary></indexterm>
+<para><computeroutput>void Idle_s::coin (int f)<computeroutput>[override]</computeroutput></computeroutput></para><para>
+
+<para>Call this state&apos;s coin function. </para>
+</para>
+
+<para>if f is true, change state to coinsinserted and clear additives, IncreaseCF as well</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>f</entry><entry>
+<para>whether to accept the coins </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_idle__s_1aece9ae0d9bb0cc97f6e8d8be7f965837"/><section>
+    <title>insert_cups()</title>
+<indexterm><primary>insert_cups</primary><secondary>Idle_s</secondary></indexterm>
+<indexterm><primary>Idle_s</primary><secondary>insert_cups</secondary></indexterm>
+<para><computeroutput>void Idle_s::insert_cups (int n)<computeroutput>[override]</computeroutput></computeroutput></para><para>
+
+<para>Call this state&apos;s insert_cups function. </para>
+</para>
+
+<para>if n &gt; 0, add onto current context cups</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>n</entry><entry>
+<para>cups to insert </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_idle__s_1a79aa30f2b98addffd3046c5d9ba8d2d1"/><section>
+    <title>set_price()</title>
+<indexterm><primary>set_price</primary><secondary>Idle_s</secondary></indexterm>
+<indexterm><primary>Idle_s</primary><secondary>set_price</secondary></indexterm>
+<para><computeroutput>void Idle_s::set_price ( )<computeroutput>[override]</computeroutput></computeroutput></para><para>
+
+<para>Call this state&apos;s set_price function. </para>
+</para>
+
+<para>Calls Storeprice </para>
+</section>
+<anchor xml:id="_class_idle__s_1adfb198c66c46b336b9265e434a69d66d"/><section>
+    <title>card()</title>
+<indexterm><primary>card</primary><secondary>Idle_s</secondary></indexterm>
+<indexterm><primary>Idle_s</primary><secondary>card</secondary></indexterm>
+<para><computeroutput>void Idle_s::card ( )<computeroutput>[override]</computeroutput></computeroutput></para><para>
+
+<para>Call this state&apos;s card function. </para>
+</para>
+
+<para>Card accepted, clear additives and funds, change state to CoinsInserted </para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/state/idle.hpp//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/src/state/idle.cpp</section>
+</section>

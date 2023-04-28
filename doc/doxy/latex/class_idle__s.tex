@@ -1,0 +1,92 @@
+\hypertarget{class_idle__s}{}\doxysection{Idle\+\_\+s Class Reference}
+\label{class_idle__s}\index{Idle\_s@{Idle\_s}}
+
+
+The Idle state.  
+
+
+
+
+{\ttfamily \#include $<$idle.\+hpp$>$}
+
+
+
+Inherits State\+\_\+t.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_idle__s_af67b561f64720e143c2ee33bda202a8f}{coin}} (int f) override
+\begin{DoxyCompactList}\small\item\em Call this state\textquotesingle{}s coin function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_idle__s_aece9ae0d9bb0cc97f6e8d8be7f965837}{insert\+\_\+cups}} (int n) override
+\begin{DoxyCompactList}\small\item\em Call this state\textquotesingle{}s insert\+\_\+cups function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_idle__s_a79aa30f2b98addffd3046c5d9ba8d2d1}{set\+\_\+price}} () override
+\begin{DoxyCompactList}\small\item\em Call this state\textquotesingle{}s set\+\_\+price function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_idle__s_adfb198c66c46b336b9265e434a69d66d}{card}} () override
+\begin{DoxyCompactList}\small\item\em Call this state\textquotesingle{}s card function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Idle state. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_idle__s_af67b561f64720e143c2ee33bda202a8f}\label{class_idle__s_af67b561f64720e143c2ee33bda202a8f}} 
+\index{Idle\_s@{Idle\_s}!coin@{coin}}
+\index{coin@{coin}!Idle\_s@{Idle\_s}}
+\doxysubsubsection{\texorpdfstring{coin()}{coin()}}
+{\footnotesize\ttfamily void Idle\+\_\+s\+::coin (\begin{DoxyParamCaption}\item[{int}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Call this state\textquotesingle{}s coin function. 
+
+if f is true, change state to coinsinserted and clear additives, Increase\+CF as well
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & whether to accept the coins \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_idle__s_aece9ae0d9bb0cc97f6e8d8be7f965837}\label{class_idle__s_aece9ae0d9bb0cc97f6e8d8be7f965837}} 
+\index{Idle\_s@{Idle\_s}!insert\_cups@{insert\_cups}}
+\index{insert\_cups@{insert\_cups}!Idle\_s@{Idle\_s}}
+\doxysubsubsection{\texorpdfstring{insert\_cups()}{insert\_cups()}}
+{\footnotesize\ttfamily void Idle\+\_\+s\+::insert\+\_\+cups (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Call this state\textquotesingle{}s insert\+\_\+cups function. 
+
+if n \texorpdfstring{$>$}{>} 0, add onto current context cups
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & cups to insert \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_idle__s_a79aa30f2b98addffd3046c5d9ba8d2d1}\label{class_idle__s_a79aa30f2b98addffd3046c5d9ba8d2d1}} 
+\index{Idle\_s@{Idle\_s}!set\_price@{set\_price}}
+\index{set\_price@{set\_price}!Idle\_s@{Idle\_s}}
+\doxysubsubsection{\texorpdfstring{set\_price()}{set\_price()}}
+{\footnotesize\ttfamily void Idle\+\_\+s\+::set\+\_\+price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Call this state\textquotesingle{}s set\+\_\+price function. 
+
+Calls Storeprice \mbox{\Hypertarget{class_idle__s_adfb198c66c46b336b9265e434a69d66d}\label{class_idle__s_adfb198c66c46b336b9265e434a69d66d}} 
+\index{Idle\_s@{Idle\_s}!card@{card}}
+\index{card@{card}!Idle\_s@{Idle\_s}}
+\doxysubsubsection{\texorpdfstring{card()}{card()}}
+{\footnotesize\ttfamily void Idle\+\_\+s\+::card (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Call this state\textquotesingle{}s card function. 
+
+Card accepted, clear additives and funds, change state to Coins\+Inserted 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+//wsl\$/\+Debian/home/bytewise/github/\+CS586\+\_\+\+Project/\+Part 2/include/state/idle.\+hpp\item 
+//wsl\$/\+Debian/home/bytewise/github/\+CS586\+\_\+\+Project/\+Part 2/src/state/idle.\+cpp\end{DoxyCompactItemize}

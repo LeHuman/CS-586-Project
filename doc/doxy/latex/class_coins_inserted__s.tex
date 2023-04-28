@@ -1,0 +1,99 @@
+\hypertarget{class_coins_inserted__s}{}\doxysection{Coins\+Inserted\+\_\+s Class Reference}
+\label{class_coins_inserted__s}\index{CoinsInserted\_s@{CoinsInserted\_s}}
+
+
+The Coins\+Inserted state.  
+
+
+
+
+{\ttfamily \#include $<$coins\+Inserted.\+hpp$>$}
+
+
+
+Inherits State\+\_\+t.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_coins_inserted__s_afe23fa8707a6b9c995ea15fc68b685b9}{coin}} (int f) override
+\begin{DoxyCompactList}\small\item\em Call this state\textquotesingle{}s coin function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_coins_inserted__s_a3d6ad50db87b1ffd1fe89b0d7ca4a850}{cancel}} () override
+\begin{DoxyCompactList}\small\item\em Call this state\textquotesingle{}s cancel function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_coins_inserted__s_a1d0b862ee650e32c5c26bcb77453b499}{dispose\+\_\+drink}} (int d) override
+\begin{DoxyCompactList}\small\item\em Call this state\textquotesingle{}s dispose\+\_\+drink function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_coins_inserted__s_a878a8cf5d745a2d84e0e8357a9cdc548}{additive}} (int d) override
+\begin{DoxyCompactList}\small\item\em Call this state\textquotesingle{}s additive function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Coins\+Inserted state. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_coins_inserted__s_afe23fa8707a6b9c995ea15fc68b685b9}\label{class_coins_inserted__s_afe23fa8707a6b9c995ea15fc68b685b9}} 
+\index{CoinsInserted\_s@{CoinsInserted\_s}!coin@{coin}}
+\index{coin@{coin}!CoinsInserted\_s@{CoinsInserted\_s}}
+\doxysubsubsection{\texorpdfstring{coin()}{coin()}}
+{\footnotesize\ttfamily void Coins\+Inserted\+\_\+s\+::coin (\begin{DoxyParamCaption}\item[{int}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Call this state\textquotesingle{}s coin function. 
+
+returns coins
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & whether to accept the coins \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_coins_inserted__s_a3d6ad50db87b1ffd1fe89b0d7ca4a850}\label{class_coins_inserted__s_a3d6ad50db87b1ffd1fe89b0d7ca4a850}} 
+\index{CoinsInserted\_s@{CoinsInserted\_s}!cancel@{cancel}}
+\index{cancel@{cancel}!CoinsInserted\_s@{CoinsInserted\_s}}
+\doxysubsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily void Coins\+Inserted\+\_\+s\+::cancel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Call this state\textquotesingle{}s cancel function. 
+
+returns coins, zeros funds, and changes state to Idle \mbox{\Hypertarget{class_coins_inserted__s_a1d0b862ee650e32c5c26bcb77453b499}\label{class_coins_inserted__s_a1d0b862ee650e32c5c26bcb77453b499}} 
+\index{CoinsInserted\_s@{CoinsInserted\_s}!dispose\_drink@{dispose\_drink}}
+\index{dispose\_drink@{dispose\_drink}!CoinsInserted\_s@{CoinsInserted\_s}}
+\doxysubsubsection{\texorpdfstring{dispose\_drink()}{dispose\_drink()}}
+{\footnotesize\ttfamily void Coins\+Inserted\+\_\+s\+::dispose\+\_\+drink (\begin{DoxyParamCaption}\item[{int}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Call this state\textquotesingle{}s dispose\+\_\+drink function. 
+
+disposes drink and additives, changes state to NO\+\_\+\+CUPS if cups are \texorpdfstring{$<$}{<}= 1, else zero funds and change state to IDLE state
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & drink enum as int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_coins_inserted__s_a878a8cf5d745a2d84e0e8357a9cdc548}\label{class_coins_inserted__s_a878a8cf5d745a2d84e0e8357a9cdc548}} 
+\index{CoinsInserted\_s@{CoinsInserted\_s}!additive@{additive}}
+\index{additive@{additive}!CoinsInserted\_s@{CoinsInserted\_s}}
+\doxysubsubsection{\texorpdfstring{additive()}{additive()}}
+{\footnotesize\ttfamily void Coins\+Inserted\+\_\+s\+::additive (\begin{DoxyParamCaption}\item[{int}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Call this state\textquotesingle{}s additive function. 
+
+Toggles an additive to be output with drink
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & additive enum as int \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+//wsl\$/\+Debian/home/bytewise/github/\+CS586\+\_\+\+Project/\+Part 2/include/state/coins\+Inserted.\+hpp\item 
+//wsl\$/\+Debian/home/bytewise/github/\+CS586\+\_\+\+Project/\+Part 2/src/state/coins\+Inserted.\+cpp\end{DoxyCompactItemize}

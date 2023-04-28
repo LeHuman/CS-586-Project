@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__return_coins_8hpp_source" xml:lang="en-US">
+<title>ReturnCoins.hpp</title>
+<indexterm><primary>//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/strategy/ReturnCoins.hpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 
+6 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_return_coins__t">ReturnCoins_t</link>&#32;{
+7 <emphasis role="keyword">public</emphasis>:
+8 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_return_coins__t">~ReturnCoins_t</link>()&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+9 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;ReturnCoins()&#32;=&#32;0;
+10 };
+11 
+15 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_return_coins___int">ReturnCoins_Int</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_return_coins__t">ReturnCoins_t</link>&#32;{
+16 <emphasis role="keyword">public</emphasis>:
+17 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;ReturnCoins()&#32;<emphasis role="keyword">override</emphasis>;
+18 };
+19 
+23 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_return_coins___float">ReturnCoins_Float</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_return_coins__t">ReturnCoins_t</link>&#32;{
+24 <emphasis role="keyword">public</emphasis>:
+25 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;ReturnCoins()&#32;<emphasis role="keyword">override</emphasis>;
+26 };
+</programlisting></section>

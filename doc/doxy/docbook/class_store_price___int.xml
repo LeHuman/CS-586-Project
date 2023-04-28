@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_store_price___int" xml:lang="en-US">
+<title>StorePrice_Int Class Reference</title>
+<indexterm><primary>StorePrice_Int</primary></indexterm>
+<para>
+
+<para>Concrete strategy class for StorePrice function. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;StorePrice.hpp&gt;</computeroutput>
+</para>
+<para>
+Inherits <link linkend="_class_store_price__t">StorePrice_t</link>.</para>
+<section>
+<title>Detailed Description</title>
+
+<para>Concrete strategy class for StorePrice function. </para>
+<para>
+The documentation for this class was generated from the following files:</para>
+//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/strategy/StorePrice.hpp//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/src/strategy/StorePrice.cpp</section>
+</section>

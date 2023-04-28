@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_d_s__2" xml:lang="en-US">
+<title>DS_2 Class Reference</title>
+<indexterm><primary>DS_2</primary></indexterm>
+<para>
+
+<para>Datastore for VM 2. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;DS_2.hpp&gt;</computeroutput>
+</para>
+<para>
+Inherits <link linkend="_class_data_store">DataStore</link>.</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_d_s__2_1a649791567ef74f6f9050622db650aa84">set_temp_price</link> (float p)</para>
+
+<para>Set the temporary price. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_d_s__2_1aa26e6fee2da19b02085745b332037952">get_temp_price</link> ()</para>
+
+<para>Get the temporary price. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_d_s__2_1a3ee135a0434aefa381bc76bcac006010">set_temp_value</link> (int v)</para>
+
+<para>Set the temporary funds. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_d_s__2_1ac27915c7a8a3c5c65e277995a774bcbf">get_temp_value</link> ()</para>
+
+<para>Get the temporary value. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_d_s__2_1a87def71255dc3b4277c93e08f4ca747d">set_price</link> (float p)</para>
+
+<para>Set the price. </para>
+</listitem>
+            <listitem><para>float <link linkend="_class_d_s__2_1a4f3ced50da8cec51961b8ae1944b2757">get_price</link> ()</para>
+
+<para>Get the price. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_d_s__2_1a3eac6b09a4560aa0c194e197d3216148">set_coins</link> (int c)</para>
+
+<para>Set coins. </para>
+</listitem>
+            <listitem><para>int <link linkend="_class_d_s__2_1ac8cf1311c5b44bdf296c9de1261f50e3">get_coins</link> ()</para>
+
+<para>Get coins. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_d_s__2_1aa6033df7160fd3dacbae11bcbbebb500"/>float <emphasis role="strong">temp_p</emphasis></para>
+
+<para>Temporary price value. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_d_s__2_1a6bf006fb67f8420071dddf7ecb39e6fe"/>int <emphasis role="strong">temp_v</emphasis></para>
+
+<para>Temporary funds value. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_d_s__2_1a7d585fe6dbeb82ccfb5be66dfa00ea94"/>float <emphasis role="strong">price</emphasis></para>
+
+<para>price value </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_d_s__2_1a385ee1ab5b808ed1a2a366db006013fc"/>int <emphasis role="strong">cf</emphasis></para>
+
+<para>funds value </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Datastore for VM 2. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_d_s__2_1a649791567ef74f6f9050622db650aa84"/><section>
+    <title>set_temp_price()</title>
+<indexterm><primary>set_temp_price</primary><secondary>DS_2</secondary></indexterm>
+<indexterm><primary>DS_2</primary><secondary>set_temp_price</secondary></indexterm>
+<para><computeroutput>void DS_2::set_temp_price (float p)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Set the temporary price. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>p</entry><entry>
+<para>price to set </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_d_s__2_1aa26e6fee2da19b02085745b332037952"/><section>
+    <title>get_temp_price()</title>
+<indexterm><primary>get_temp_price</primary><secondary>DS_2</secondary></indexterm>
+<indexterm><primary>DS_2</primary><secondary>get_temp_price</secondary></indexterm>
+<para><computeroutput>float DS_2::get_temp_price ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Get the temporary price. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>float current temp price </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_d_s__2_1a3ee135a0434aefa381bc76bcac006010"/><section>
+    <title>set_temp_value()</title>
+<indexterm><primary>set_temp_value</primary><secondary>DS_2</secondary></indexterm>
+<indexterm><primary>DS_2</primary><secondary>set_temp_value</secondary></indexterm>
+<para><computeroutput>void DS_2::set_temp_value (int v)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Set the temporary funds. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>v</entry><entry>
+<para>funds to set </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_d_s__2_1ac27915c7a8a3c5c65e277995a774bcbf"/><section>
+    <title>get_temp_value()</title>
+<indexterm><primary>get_temp_value</primary><secondary>DS_2</secondary></indexterm>
+<indexterm><primary>DS_2</primary><secondary>get_temp_value</secondary></indexterm>
+<para><computeroutput>int DS_2::get_temp_value ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Get the temporary value. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>int current temporary value </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_d_s__2_1a87def71255dc3b4277c93e08f4ca747d"/><section>
+    <title>set_price()</title>
+<indexterm><primary>set_price</primary><secondary>DS_2</secondary></indexterm>
+<indexterm><primary>DS_2</primary><secondary>set_price</secondary></indexterm>
+<para><computeroutput>void DS_2::set_price (float p)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Set the price. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>p</entry><entry>
+<para>price to set </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_d_s__2_1a4f3ced50da8cec51961b8ae1944b2757"/><section>
+    <title>get_price()</title>
+<indexterm><primary>get_price</primary><secondary>DS_2</secondary></indexterm>
+<indexterm><primary>DS_2</primary><secondary>get_price</secondary></indexterm>
+<para><computeroutput>float DS_2::get_price ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Get the price. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>float current price </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_d_s__2_1a3eac6b09a4560aa0c194e197d3216148"/><section>
+    <title>set_coins()</title>
+<indexterm><primary>set_coins</primary><secondary>DS_2</secondary></indexterm>
+<indexterm><primary>DS_2</primary><secondary>set_coins</secondary></indexterm>
+<para><computeroutput>void DS_2::set_coins (int c)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Set coins. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>c</entry><entry>
+<para>coins to set </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_d_s__2_1ac8cf1311c5b44bdf296c9de1261f50e3"/><section>
+    <title>get_coins()</title>
+<indexterm><primary>get_coins</primary><secondary>DS_2</secondary></indexterm>
+<indexterm><primary>DS_2</primary><secondary>get_coins</secondary></indexterm>
+<para><computeroutput>int DS_2::get_coins ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Get coins. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>int </para>
+</formalpara>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/datastore/DS_2.hpp</section>
+</section>

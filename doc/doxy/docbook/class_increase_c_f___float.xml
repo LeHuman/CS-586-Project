@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_increase_c_f___float" xml:lang="en-US">
+<title>IncreaseCF_Float Class Reference</title>
+<indexterm><primary>IncreaseCF_Float</primary></indexterm>
+<para>
+
+<para>Concrete strategy class for <link linkend="_class_v_m1">VM1</link> IncreaseCF function. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;IncreaseCF.hpp&gt;</computeroutput>
+</para>
+<para>
+Inherits <link linkend="_class_increase_c_f__t">IncreaseCF_t</link>.</para>
+<section>
+<title>Detailed Description</title>
+
+<para>Concrete strategy class for <link linkend="_class_v_m1">VM1</link> IncreaseCF function. </para>
+<para>
+The documentation for this class was generated from the following files:</para>
+//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/strategy/IncreaseCF.hpp//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/src/strategy/IncreaseCF.cpp</section>
+</section>

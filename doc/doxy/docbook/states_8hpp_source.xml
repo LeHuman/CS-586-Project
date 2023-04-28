@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_states_8hpp_source" xml:lang="en-US">
+<title>states.hpp</title>
+<indexterm><primary>//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/state/states.hpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 
+3 <emphasis role="preprocessor">#include&#32;&quot;coinsInserted.hpp&quot;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&quot;create.hpp&quot;</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&quot;idle.hpp&quot;</emphasis>
+6 <emphasis role="preprocessor">#include&#32;&quot;noCups.hpp&quot;</emphasis>
+7 <emphasis role="preprocessor">#include&#32;&quot;state.hpp&quot;</emphasis>
+</programlisting></section>

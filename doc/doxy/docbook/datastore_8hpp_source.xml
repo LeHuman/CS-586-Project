@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_datastore_8hpp_source" xml:lang="en-US">
+<title>datastore.hpp</title>
+<indexterm><primary>//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/datastore/datastore.hpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 
+7 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_data_store">DataStore</link>&#32;{
+8 <emphasis role="keyword">public</emphasis>:
+9 &#32;&#32;&#32;&#32;<link linkend="_class_data_store">DataStore</link>()&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+10 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_data_store">~DataStore</link>()&#32;=&#32;<emphasis role="keywordflow">default</emphasis>;
+11 };
+</programlisting></section>
