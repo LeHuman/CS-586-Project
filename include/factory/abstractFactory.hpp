@@ -8,13 +8,13 @@
  */
 class AbstractFactory {
 protected:
-    DataStore *cacheDS = nullptr;
-    StorePrice_t *cacheSP = nullptr;
-    ZeroCF_t *cacheZCF = nullptr;
-    IncreaseCF_t *cacheICF = nullptr;
-    ReturnCoins_t *cacheRC = nullptr;
-    DisposeDrink_t *cacheDD = nullptr;
-    DisposeAdditive_t *cacheDA = nullptr;
+    DataStore_t *DS = nullptr;
+    StorePrice_t *SP = nullptr;
+    ZeroCF_t *ZCF = nullptr;
+    IncreaseCF_t *ICF = nullptr;
+    ReturnCoins_t *RC = nullptr;
+    DisposeDrink_t *DD = nullptr;
+    DisposeAdditive_t *DA = nullptr;
 
 public:
     AbstractFactory() = default;
@@ -24,9 +24,9 @@ public:
     /**
      * @brief returns a specific object from this factory
      *
-     * @return DataStore* factory specific object
+     * @return DataStore_t* factory specific object
      */
-    virtual DataStore *createDS() = 0;
+    virtual DataStore_t *createDS() = 0;
     /**
      * @brief returns a specific object from this factory
      *

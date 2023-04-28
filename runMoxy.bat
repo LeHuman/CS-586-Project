@@ -1,0 +1,1 @@
+doxygen.exe;C:\Users\Bitwise\Desktop\db\bin\doxybook2.exe -i "./doc/doxy/xml" -o "./doc/moxy"

@@ -8,7 +8,7 @@
 class StorePrice_t {
 public:
     virtual ~StorePrice_t() = default;
-    virtual void StorePrice(DataStore *ds) = 0;
+    virtual void StorePrice(DataStore_t *ds) = 0;
 };
 
 /**
@@ -16,7 +16,7 @@ public:
  */
 class StorePrice_Int : public StorePrice_t {
 public:
-    void StorePrice(DataStore *ds) override;
+    void StorePrice(DataStore_t *ds) override;
 };
 
 /**
@@ -24,5 +24,5 @@ public:
  */
 class StorePrice_Float : public StorePrice_t {
 public:
-    void StorePrice(DataStore *ds) override;
+    void StorePrice(DataStore_t *ds) override;
 };

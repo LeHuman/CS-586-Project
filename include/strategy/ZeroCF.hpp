@@ -8,7 +8,7 @@
 class ZeroCF_t {
 public:
     virtual ~ZeroCF_t() = default;
-    virtual void ZeroCF(DataStore *ds) = 0;
+    virtual void ZeroCF(DataStore_t *ds) = 0;
 };
 
 /**
@@ -16,7 +16,7 @@ public:
  */
 class ZeroCF_Int : public ZeroCF_t {
 public:
-    void ZeroCF(DataStore *ds) override;
+    void ZeroCF(DataStore_t *ds) override;
 };
 
 /**
@@ -24,5 +24,5 @@ public:
  */
 class ZeroCF_Float : public ZeroCF_t {
 public:
-    void ZeroCF(DataStore *ds) override;
+    void ZeroCF(DataStore_t *ds) override;
 };

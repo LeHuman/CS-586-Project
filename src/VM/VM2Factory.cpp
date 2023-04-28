@@ -1,50 +1,50 @@
 #include "../../include/factory/factory.hpp"
 
-DataStore *VM2Factory::createDS() {
-    if (!cacheDS) {
-        cacheDS = new DS_2();
+DataStore_t *VM2Factory::createDS() {
+    if (!DS) {
+        DS = new DS_2();
     }
-    return cacheDS;
+    return DS;
 }
 
 StorePrice_t *VM2Factory::createSP() {
-    if (!cacheSP) {
-        cacheSP = new StorePrice_Float();
+    if (!SP) {
+        SP = new StorePrice_Float();
     }
-    return cacheSP;
+    return SP;
 }
 
 ZeroCF_t *VM2Factory::createZCF() {
-    if (!cacheZCF) {
-        cacheZCF = new ZeroCF_Int();
+    if (!ZCF) {
+        ZCF = new ZeroCF_Int();
     }
-    return cacheZCF;
+    return ZCF;
 }
 
 IncreaseCF_t *VM2Factory::createICF() {
-    if (!cacheICF) {
-        cacheICF = new IncreaseCF_Int();
+    if (!ICF) {
+        ICF = new IncreaseCF_Int();
     }
-    return cacheICF;
+    return ICF;
 }
 
 ReturnCoins_t *VM2Factory::createRC() {
-    if (!cacheRC) {
-        cacheRC = new ReturnCoins_Int();
+    if (!RC) {
+        RC = new ReturnCoins_Int();
     }
-    return cacheRC;
+    return RC;
 }
 
 DisposeDrink_t *VM2Factory::createDD() {
-    if (!cacheDD) {
-        cacheDD = new DisposeDrink_2();
+    if (!DD) {
+        DD = new DisposeDrink_2();
     }
-    return cacheDD;
+    return DD;
 }
 
 DisposeAdditive_t *VM2Factory::createDA() {
-    if (!cacheDA) {
-        cacheDA = new DisposeAdditive_2();
+    if (!DA) {
+        DA = new DisposeAdditive_2();
     }
-    return cacheDA;
+    return DA;
 }

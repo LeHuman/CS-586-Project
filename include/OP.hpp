@@ -10,7 +10,7 @@
  */
 class OP {
 private:
-    DataStore *ds;
+    DataStore_t *ds;
     StorePrice_t *sp;
     ZeroCF_t *zcf;
     IncreaseCF_t *icf;

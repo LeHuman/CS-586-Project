@@ -10,9 +10,9 @@ public:
     /**
      * @brief Create a new DataSto object for this strategy
      *
-     * @return DataStore*
+     * @return DataStore_t*
      */
-    DataStore *createDS() override;
+    DataStore_t *createDS() override;
 
     /**
      * @brief Create a new StorePrice object for this strategy

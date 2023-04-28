@@ -5,7 +5,7 @@
 /**
  * @brief Datastore for VM 2
  */
-class DS_2 : public DataStore {
+class DS_2 : public DataStore_t {
 private:
     /**
      * @brief Temporary price value

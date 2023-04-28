@@ -4,8 +4,8 @@
  * @brief The abstract datastore class for data storage
  *
  */
-class DataStore {
+class DataStore_t {
 public:
-    DataStore() = default;
-    virtual ~DataStore() = default;
+    DataStore_t() = default;
+    virtual ~DataStore_t() = default;
 };
