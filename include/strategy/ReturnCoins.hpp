@@ -10,7 +10,7 @@ public:
 };
 
 /**
- * @brief Concrete strategy class for VM1 ReturnCoins function
+ * @brief Concrete strategy class for VM2 ReturnCoins function
  */
 class ReturnCoins_Int : public ReturnCoins_t {
 public:
@@ -18,7 +18,7 @@ public:
 };
 
 /**
- * @brief Concrete strategy class for VM2 ReturnCoins function
+ * @brief Concrete strategy class for VM1 ReturnCoins function
  */
 class ReturnCoins_Float : public ReturnCoins_t {
 public:

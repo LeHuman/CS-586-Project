@@ -14,12 +14,16 @@ public:
     /**
      * @brief Call this state's coin function
      *
+     * Returns coins
+     * 
      * @param f whether to accept the coins
      */
     void coin(int n) override;
 
     /**
      * @brief Call this state's insert_cups function
+     * 
+     * if n is > 0 then it saves it to context and changes state to idle
      *
      * @param n cups to insert
      */

@@ -8,7 +8,7 @@ void CoinsInserted_s::coin(int f) {
 }
 
 void CoinsInserted_s::additive(int d) {
-    ctx->set_additive((additive_e)d);
+    ctx->toggle_additive((additive_e)d);
 
     std::cout << "List of Current Additives : ";
 

@@ -28,40 +28,40 @@ MDA::~MDA() {
 }
 
 void MDA::change_state(state_e stateID) {
-    current = states[stateID];
+    current_state = states[stateID];
     std::cout << "New state: " << state_e_str[stateID] << std::endl;
 }
 
 /* Decentralized State Pattern */
 
 void MDA::create() {
-    current->create();
+    current_state->create();
 }
 
 void MDA::insert_cups(int n) {
-    current->insert_cups(n);
+    current_state->insert_cups(n);
 };
 
 void MDA::coin(int f) {
-    current->coin(f);
+    current_state->coin(f);
 };
 
 void MDA::card() {
-    current->card();
+    current_state->card();
 };
 
 void MDA::cancel() {
-    current->cancel();
+    current_state->cancel();
 };
 
 void MDA::set_price() {
-    current->set_price();
+    current_state->set_price();
 };
 
 void MDA::dispose_drink(int d) {
-    current->dispose_drink(d);
+    current_state->dispose_drink(d);
 };
 
 void MDA::additive(int d) {
-    current->additive(d);
+    current_state->additive(d);
 };

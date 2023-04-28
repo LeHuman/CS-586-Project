@@ -6,9 +6,9 @@
 #include "../../include/strategy/strategy.hpp"
 
 void ReturnCoins_Int::ReturnCoins() {
-    std::cout << "return Coins" << std::endl;
+    std::cout << "Return Coins" << std::endl;
 }
 
 void ReturnCoins_Float::ReturnCoins() {
-    std::cout << "return Coins" << std::endl;
+    std::cout << "Return Coins" << std::endl;
 }

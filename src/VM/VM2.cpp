@@ -14,11 +14,10 @@ void VM2::CREATE(float p) {
 void VM2::COIN(int v) {
     ds->set_temp_value(v);
 
-    if (ds->get_price() <= ds->get_coins() + v) {
+    if (ds->get_price() <= ds->get_coins() + v)
         mda->coin(1);
-    } else {
+    else
         mda->coin(0);
-    }
 }
 
 void VM2::SUGAR() {
@@ -52,55 +51,4 @@ void VM2::CARD(int x) {
     } else {
         std::cout << "Transaction Cancelled : Not Enough Money" << std::endl;
     }
-}
-
-/* Concrete Factory for VM 2 */
-
-DataStore *VM2Factory::createDS() {
-    if (!cacheDS) {
-        cacheDS = new DS_2();
-    }
-    return cacheDS;
-}
-
-StorePrice_t *VM2Factory::createSP() {
-    if (!cacheSP) {
-        cacheSP = new StorePrice_Float();
-    }
-    return cacheSP;
-}
-
-ZeroCF_t *VM2Factory::createZCF() {
-    if (!cacheZCF) {
-        cacheZCF = new ZeroCF_Float();
-    }
-    return cacheZCF;
-}
-
-IncreaseCF_t *VM2Factory::createICF() {
-    if (!cacheICF) {
-        cacheICF = new IncreaseCF_Float();
-    }
-    return cacheICF;
-}
-
-ReturnCoins_t *VM2Factory::createRC() {
-    if (!cacheRC) {
-        cacheRC = new ReturnCoins_Float();
-    }
-    return cacheRC;
-}
-
-DisposeDrink_t *VM2Factory::createDD() {
-    if (!cacheDD) {
-        cacheDD = new DisposeDrink_2();
-    }
-    return cacheDD;
-}
-
-DisposeAdditive_t *VM2Factory::createDA() {
-    if (!cacheDA) {
-        cacheDA = new DisposeAdditive_2();
-    }
-    return cacheDA;
 }

@@ -12,7 +12,7 @@ public:
 };
 
 /**
- * @brief Concrete strategy class for VM1 IncreaseCF function
+ * @brief Concrete strategy class for VM2 IncreaseCF function
  */
 class IncreaseCF_Int : public IncreaseCF_t {
 public:
@@ -20,7 +20,7 @@ public:
 };
 
 /**
- * @brief Concrete strategy class for VM2 IncreaseCF function
+ * @brief Concrete strategy class for VM1 IncreaseCF function
  */
 class IncreaseCF_Float : public IncreaseCF_t {
 public:

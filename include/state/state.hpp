@@ -37,7 +37,7 @@ private:
      */
     int cups = 0;
     /**
-     * @brief
+     * @brief Selected additives
      */
     std::set<int> a;
 
@@ -58,8 +58,11 @@ public:
         a.clear();
     }
 
-    void set_additive(additive_e add) {
-        a.insert(add);
+    void toggle_additive(additive_e add) {
+        if (a.find(add) == a.end())
+            a.insert(add);
+        else
+            a.erase(add);
     }
 
     std::set<int> get_additives() {

@@ -55,7 +55,7 @@ public:
     /**
      * @brief Get the temporary value
      *
-     * @return float current temporary value
+     * @return int current temporary value
      */
     int get_temp_value() {
         return temp_v;
@@ -91,7 +91,7 @@ public:
     /**
      * @brief Get coins
      *
-     * @return float
+     * @return int
      */
     int get_coins() {
         return cf;

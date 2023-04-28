@@ -4,9 +4,9 @@
  * @brief This file serves as the driver for both VMs
  * @version 0.1
  * @date 2023-04-28
- * 
+ *
  * @copyright Copyright (c) 2023
- * 
+ *
  */
 
 #include <fstream>
@@ -87,9 +87,9 @@ Vending Machine-1 Execution
     while (ch != 'q') {
         std::cout << std::endl;
         std::cout << "Select Operation: " << std::endl;
-        std::cout << "0-create,1-coin,2-sugar,3-tea,4-chocolate,5-insert_cups,6-set_price,7-cancel,q-quit" << std::endl;
+        std::cout << "0-create,1-coin,2-sugar,3-tea,4-latte,5-insert_cups,6-set_price,7-cancel,q-quit" << std::endl;
 
-        ch = get_user_input<decltype(ch)>();
+        ch = get_user_input<decltype(ch)>("", "char");
 
         std::cout << std::endl;
 
@@ -127,7 +127,7 @@ Vending Machine-1 Execution
             vm1->cancel();
             break;
         case 'q':
-            std::cout << "Quit VM1" << std::endl;
+            std::cout << "Quit" << std::endl;
             break;
         default:
             std::cout << "Operation: Unknown" << std::endl;
@@ -176,7 +176,7 @@ Vending Machine-2 Execution
         std::cout << "Select Operation: " << std::endl;
         std::cout << "0-CREATE,1-COIN,2-SUGAR,3-CREAM,4-COFFEE,5-InsertCups,6-SetPrice,7-CANCEL,8-CARD,q-quit" << std::endl;
 
-        ch = get_user_input<decltype(ch)>();
+        ch = get_user_input<decltype(ch)>("", "char");
 
         std::cout << std::endl;
 
@@ -218,7 +218,7 @@ Vending Machine-2 Execution
             vm2->CARD(x);
             break;
         case 'q':
-            std::cout << "Quit VM1" << std::endl;
+            std::cout << "Quit" << std::endl;
             break;
         default:
             std::cout << "Operation: Unknown" << std::endl;
@@ -240,7 +240,7 @@ Vending Machine-2 Execution
 int main() {
     char key = 0;
     while (key != 'q') {
-        key = get_user_input<char>("Enter option:\n[1] VM1\n[2] VM2\n[q] quit");
+        key = get_user_input<char>("Enter option:\n[1] VM1\n[2] VM2\n[q] quit", "char");
 
         if (key == '1') {
             drive_vm1();

@@ -12,7 +12,7 @@ public:
 };
 
 /**
- * @brief Concrete strategy class for VM1 StorePrice function
+ * @brief Concrete strategy class for StorePrice function
  */
 class StorePrice_Int : public StorePrice_t {
 public:
@@ -20,7 +20,7 @@ public:
 };
 
 /**
- * @brief Concrete strategy class for VM2 StorePrice function
+ * @brief Concrete strategy class for VM1 and VM2 StorePrice function
  */
 class StorePrice_Float : public StorePrice_t {
 public:

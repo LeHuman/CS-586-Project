@@ -13,6 +13,8 @@ public:
 
     /**
      * @brief Call this state's create function
+     *
+     * Stores price and changes state to NO_CUPS
      */
     void create() override;
 };

@@ -1,5 +1,6 @@
 CC = g++
 CFLAGS = -Wno-unused-parameter -O2 -Wall -Wextra -pedantic -g -I./include
+CFLAGS = -Wno-unused-parameter -O2 -Wall -Wextra -pedantic -g -I./include
 LDFLAGS =
 
 SRCDIR = src

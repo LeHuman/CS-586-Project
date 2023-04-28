@@ -12,7 +12,7 @@ public:
 };
 
 /**
- * @brief Concrete strategy class for VM1 ZeroCF function
+ * @brief Concrete strategy class for VM2 ZeroCF function
  */
 class ZeroCF_Int : public ZeroCF_t {
 public:
@@ -20,7 +20,7 @@ public:
 };
 
 /**
- * @brief Concrete strategy class for VM2 ZeroCF function
+ * @brief Concrete strategy class for VM1 ZeroCF function
  */
 class ZeroCF_Float : public ZeroCF_t {
 public:

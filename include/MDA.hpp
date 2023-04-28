@@ -23,7 +23,7 @@ private:
     /**
      * @brief the current state
      */
-    State_t *current;
+    State_t *current_state;
 
 public:
     /**

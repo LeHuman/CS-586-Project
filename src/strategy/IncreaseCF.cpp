@@ -18,9 +18,9 @@ void IncreaseCF_Int::IncreaseCF(DataStore *ds) {
 void IncreaseCF_Float::IncreaseCF(DataStore *ds) {
     if (DS_1 *ds_1 = dynamic_cast<DS_1 *>(ds)) {
         ds_1->set_coins(ds_1->get_coins() + ds_1->get_temp_value());
-        int p = ds_1->get_price();
+        float p = ds_1->get_price();
         std::cout << "Price of drink : " << p << std::endl;
-        int b = ds_1->get_coins();
+        float b = ds_1->get_coins();
         std::cout << "Current funds : " << b << std::endl;
     }
 }
