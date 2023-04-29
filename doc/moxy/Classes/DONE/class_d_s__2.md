@@ -6,8 +6,6 @@ summary: Datastore for VM 2.
 
 # DS_2
 
-
-
 Datastore for VM 2. 
 
 

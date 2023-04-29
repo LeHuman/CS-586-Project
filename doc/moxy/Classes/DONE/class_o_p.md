@@ -6,8 +6,6 @@ summary: The Output Processor receives actions from a state and uses the appropr
 
 # OP
 
-
-
 The Output Processor receives actions from a state and uses the appropriate strategy. 
 
 

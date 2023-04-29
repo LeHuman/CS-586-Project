@@ -1,17 +1,15 @@
 ---
-title: VM1Factory
-summary: Concrete Factory for VM 1. 
+title: VM2Factory
+summary: Concrete Factory for VM 2. 
 
 ---
 
-# VM1Factory
+# VM2Factory
+
+Concrete Factory for VM 2. 
 
 
-
-Concrete Factory for VM 1. 
-
-
-`#include <VM1Factory.hpp>`
+`#include <VM2Factory.hpp>`
 
 Inherits from [AbstractFactory](Classes/class_abstract_factory.md)
 
@@ -19,13 +17,13 @@ Inherits from [AbstractFactory](Classes/class_abstract_factory.md)
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual [DataStore](Classes/class_data_store.md) * | **[createDS](Classes/class_v_m1_factory.md#function-createds)**() override<br>Create a new DataSto object for this strategy.  |
-| virtual [StorePrice_t](Classes/class_store_price__t.md) * | **[createSP](Classes/class_v_m1_factory.md#function-createsp)**() override<br>Create a new StorePrice object for this strategy.  |
-| virtual [ZeroCF_t](Classes/class_zero_c_f__t.md) * | **[createZCF](Classes/class_v_m1_factory.md#function-createzcf)**() override<br>Create a new ZeroCF object for this strategy.  |
-| virtual [IncreaseCF_t](Classes/class_increase_c_f__t.md) * | **[createICF](Classes/class_v_m1_factory.md#function-createicf)**() override<br>Create a new IncreaseCF object for this strategy.  |
-| virtual [ReturnCoins_t](Classes/class_return_coins__t.md) * | **[createRC](Classes/class_v_m1_factory.md#function-createrc)**() override<br>Create a new ReturnCoins object for this strategy.  |
-| virtual [DisposeDrink_t](Classes/class_dispose_drink__t.md) * | **[createDD](Classes/class_v_m1_factory.md#function-createdd)**() override<br>Create a new DisposeDrink object for this strategy.  |
-| virtual [DisposeAdditive_t](Classes/class_dispose_additive__t.md) * | **[createDA](Classes/class_v_m1_factory.md#function-createda)**() override<br>Create a new DisposeAdditive object for this strategy.  |
+| virtual [DataStore](Classes/class_data_store.md) * | **[createDS](Classes/class_v_m2_factory.md#function-createds)**() override<br>Create a new DataSto object for this strategy.  |
+| virtual [StorePrice_t](Classes/class_store_price__t.md) * | **[createSP](Classes/class_v_m2_factory.md#function-createsp)**() override<br>Create a new StorePrice object for this strategy.  |
+| virtual [ZeroCF_t](Classes/class_zero_c_f__t.md) * | **[createZCF](Classes/class_v_m2_factory.md#function-createzcf)**() override<br>Create a new ZeroCF object for this strategy.  |
+| virtual [IncreaseCF_t](Classes/class_increase_c_f__t.md) * | **[createICF](Classes/class_v_m2_factory.md#function-createicf)**() override<br>Create a new IncreaseCF object for this strategy.  |
+| virtual [ReturnCoins_t](Classes/class_return_coins__t.md) * | **[createRC](Classes/class_v_m2_factory.md#function-createrc)**() override<br>Create a new ReturnCoins object for this strategy.  |
+| virtual [DisposeDrink_t](Classes/class_dispose_drink__t.md) * | **[createDD](Classes/class_v_m2_factory.md#function-createdd)**() override<br>Create a new DisposeDrink object for this strategy.  |
+| virtual [DisposeAdditive_t](Classes/class_dispose_additive__t.md) * | **[createDA](Classes/class_v_m2_factory.md#function-createda)**() override<br>Create a new DisposeAdditive object for this strategy.  |
 
 ## Additional inherited members
 

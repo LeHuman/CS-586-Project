@@ -7,7 +7,6 @@ summary: Abstract strategy class for DisposeAdditive function.
 # DisposeAdditive_t
 
 
-
 Abstract strategy class for DisposeAdditive function. 
 
 

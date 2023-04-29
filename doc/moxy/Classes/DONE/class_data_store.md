@@ -6,8 +6,6 @@ summary: The abstract datastore class for data storage.
 
 # DataStore
 
-
-
 The abstract datastore class for data storage. 
 
 

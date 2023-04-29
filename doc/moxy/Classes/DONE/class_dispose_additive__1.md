@@ -1,14 +1,13 @@
 ---
-title: DisposeAdditive_2
-summary: Concrete strategy class for VM2 DisposeAdditive function. 
+title: DisposeAdditive_1
+summary: Concrete strategy class for VM1 DisposeAdditive function. 
 
 ---
 
-# DisposeAdditive_2
+# DisposeAdditive_1
 
 
-
-Concrete strategy class for [VM2]() DisposeAdditive function. 
+Concrete strategy class for [VM1]() DisposeAdditive function. 
 
 
 `#include <DisposeAdditive.hpp>`
@@ -19,7 +18,7 @@ Inherits from [DisposeAdditive_t](Classes/class_dispose_additive__t.md)
 
 |                | Name           |
 | -------------- | -------------- |
-| virtual void | **[DisposeAdditive](Classes/class_dispose_additive__2.md#function-disposeadditive)**(std::set< int > A) override |
+| virtual void | **[DisposeAdditive](Classes/class_dispose_additive__1.md#function-disposeadditive)**(std::set< int > A) override |
 
 ## Additional inherited members
 

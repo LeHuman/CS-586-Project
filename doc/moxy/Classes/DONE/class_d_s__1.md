@@ -6,8 +6,6 @@ summary: Datastore for VM 1.
 
 # DS_1
 
-
-
 Datastore for VM 1. 
 
 

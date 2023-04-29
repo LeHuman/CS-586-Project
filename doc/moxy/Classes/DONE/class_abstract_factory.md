@@ -6,8 +6,6 @@ summary: Abstract class for VM factory objects.
 
 # AbstractFactory
 
-
-
 Abstract class for VM factory objects. 
 
 
