@@ -390,9 +390,9 @@ Inherited by [IncreaseCF_Float](Classes/class_increase_c_f___float.md), [Increas
 
 ### Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
-| virtual | **[~IncreaseCF_t](Classes/class_increase_c_f__t.md#function-~increasecf-t)**() =default |
+|              |                                                           Name                                                           |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------ |
+| virtual      | **[~IncreaseCF_t](Classes/class_increase_c_f__t.md#function-~increasecf-t)**() =default                                  |
 | virtual void | **[IncreaseCF](Classes/class_increase_c_f__t.md#function-increasecf)**([DataStore](Classes/class_data_store.md) * ds) =0 |
 
 ## IncreaseCF_Int
@@ -405,8 +405,8 @@ Inherits from [IncreaseCF_t](Classes/class_increase_c_f__t.md)
 
 ### Public Functions
 
-|                | Name           |
-| -------------- | -------------- |
+|              |                                                               Name                                                                |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------- |
 | virtual void | **[IncreaseCF](Classes/class_increase_c_f___int.md#function-increasecf)**([DataStore](Classes/class_data_store.md) * ds) override |
 
 ## IncreaseCF_Float
@@ -419,8 +419,320 @@ Inherits from [IncreaseCF_t](Classes/class_increase_c_f__t.md)
 
 ### Public Functions
 
+|              |                                                                Name                                                                 |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| virtual void | **[IncreaseCF](Classes/class_increase_c_f___float.md#function-increasecf)**([DataStore](Classes/class_data_store.md) * ds) override |
+
+# ReturnCoins_t
+
+Abstract strategy class for ReturnCoins function.
+
+`#include <ReturnCoins.hpp>`
+
+Inherited by [ReturnCoins_Float](Classes/class_return_coins___float.md), [ReturnCoins_Int](Classes/class_return_coins___int.md)
+
+## Public Functions
+
+|              |                                           Name                                            |
+| ------------ | ----------------------------------------------------------------------------------------- |
+| virtual      | **[~ReturnCoins_t](Classes/class_return_coins__t.md#function-~returncoins-t)**() =default |
+| virtual void | **[ReturnCoins](Classes/class_return_coins__t.md#function-returncoins)**() =0             |
+
+# ReturnCoins_Float
+
+Concrete strategy class for [VM1]() ReturnCoins function.
+
+`#include <ReturnCoins.hpp>`
+
+Inherits from [ReturnCoins_t](Classes/class_return_coins__t.md)
+
+## Public Functions
+
+|              |                                           Name                                           |
+| ------------ | ---------------------------------------------------------------------------------------- |
+| virtual void | **[ReturnCoins](Classes/class_return_coins___float.md#function-returncoins)**() override |
+
+# ReturnCoins_Int
+
+Concrete strategy class for [VM2]() ReturnCoins function.
+
+`#include <ReturnCoins.hpp>`
+
+Inherits from [ReturnCoins_t](Classes/class_return_coins__t.md)
+
+## Public Functions
+
+|              |                                          Name                                          |
+| ------------ | -------------------------------------------------------------------------------------- |
+| virtual void | **[ReturnCoins](Classes/class_return_coins___int.md#function-returncoins)**() override |
+
+## Additional inherited members
+
+**Public Functions inherited from [ReturnCoins_t](Classes/class_return_coins__t.md)**
+
+|         |                                           Name                                            |
+| ------- | ----------------------------------------------------------------------------------------- |
+| virtual | **[~ReturnCoins_t](Classes/class_return_coins__t.md#function-~returncoins-t)**() =default |
+
+# IncreaseCF_t
+
+Abstract strategy class for IncreaseCF function.
+
+`#include <IncreaseCF.hpp>`
+
+Inherited by [IncreaseCF_Float](Classes/class_increase_c_f___float.md), [IncreaseCF_Int](Classes/class_increase_c_f___int.md)
+
+## Public Functions
+
+|              |                                                           Name                                                           |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------ |
+| virtual      | **[~IncreaseCF_t](Classes/class_increase_c_f__t.md#function-~increasecf-t)**() =default                                  |
+| virtual void | **[IncreaseCF](Classes/class_increase_c_f__t.md#function-increasecf)**([DataStore](Classes/class_data_store.md) * ds) =0 |
+
+# IncreaseCF_Int
+
+Concrete strategy class for [VM2]() IncreaseCF function.
+
+`#include <IncreaseCF.hpp>`
+
+Inherits from [IncreaseCF_t](Classes/class_increase_c_f__t.md)
+
+## Public Functions
+
+|              |                                                               Name                                                                |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+| virtual void | **[IncreaseCF](Classes/class_increase_c_f___int.md#function-increasecf)**([DataStore](Classes/class_data_store.md) * ds) override |
+
+# IncreaseCF_Float
+
+Concrete strategy class for [VM1]() IncreaseCF function.
+
+`#include <IncreaseCF.hpp>`
+
+Inherits from [IncreaseCF_t](Classes/class_increase_c_f__t.md)
+
+## Public Functions
+
+|              |                                                                Name                                                                 |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+| virtual void | **[IncreaseCF](Classes/class_increase_c_f___float.md#function-increasecf)**([DataStore](Classes/class_data_store.md) * ds) override |
+
+# ZeroCF_t
+
+Abstract strategy class for ZeroCF function.
+
+`#include <ZeroCF.hpp>`
+
+Inherited by [ZeroCF_Float](Classes/class_zero_c_f___float.md), [ZeroCF_Int](Classes/class_zero_c_f___int.md)
+
+## Public Functions
+
+|              |                                                     Name                                                     |
+| ------------ | ------------------------------------------------------------------------------------------------------------ |
+| virtual      | **[~ZeroCF_t](Classes/class_zero_c_f__t.md#function-~zerocf-t)**() =default                                  |
+| virtual void | **[ZeroCF](Classes/class_zero_c_f__t.md#function-zerocf)**([DataStore](Classes/class_data_store.md) * ds) =0 |
+
+# ZeroCF_Int
+
+Concrete strategy class for [VM2](Classes/class_v_m2.md) ZeroCF function.
+
+`#include <ZeroCF.hpp>`
+
+Inherits from [ZeroCF_t](Classes/class_zero_c_f__t.md)
+
+## Public Functions
+
+|              |                                                         Name                                                          |
+| ------------ | --------------------------------------------------------------------------------------------------------------------- |
+| virtual void | **[ZeroCF](Classes/class_zero_c_f___int.md#function-zerocf)**([DataStore](Classes/class_data_store.md) * ds) override |
+
+# ZeroCF_Float
+
+Concrete strategy class for [VM1](Classes/class_v_m1.md) ZeroCF function.
+
+`#include <ZeroCF.hpp>`
+
+Inherits from [ZeroCF_t](Classes/class_zero_c_f__t.md)
+
+## Public Functions
+
+|              |                                                          Name                                                           |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| virtual void | **[ZeroCF](Classes/class_zero_c_f___float.md#function-zerocf)**([DataStore](Classes/class_data_store.md) * ds) override |
+
+# StorePrice_t
+
+Abstract strategy class for StorePrice function.
+
+`#include <StorePrice.hpp>`
+
+Inherited by [StorePrice_Float](Classes/class_store_price___float.md), [StorePrice_Int](Classes/class_store_price___int.md)
+
+## Public Functions
+
+|              |                                                          Name                                                           |
+| ------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| virtual      | **[~StorePrice_t](Classes/class_store_price__t.md#function-~storeprice-t)**() =default                                  |
+| virtual void | **[StorePrice](Classes/class_store_price__t.md#function-storeprice)**([DataStore](Classes/class_data_store.md) * ds) =0 |
+
+# StorePrice_Int
+
+Concrete strategy class for StorePrice function.
+
+`#include <StorePrice.hpp>`
+
+Inherits from [StorePrice_t](Classes/class_store_price__t.md)
+
+## Public Functions
+
+|              |                                                               Name                                                               |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------- |
+| virtual void | **[StorePrice](Classes/class_store_price___int.md#function-storeprice)**([DataStore](Classes/class_data_store.md) * ds) override |
+
+# StorePrice_Float
+
+Concrete strategy class for [VM1]() and [VM2]() StorePrice function.
+
+`#include <StorePrice.hpp>`
+
+Inherits from [StorePrice_t](Classes/class_store_price__t.md)
+
+## Public Functions
+
+|              |                                                                Name                                                                |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| virtual void | **[StorePrice](Classes/class_store_price___float.md#function-storeprice)**([DataStore](Classes/class_data_store.md) * ds) override |
+
+**State Pattern**
+
+# MDA
+
+Model Driven Architecture class This servers as the connection between VM and states.
+
+`#include <MDA.hpp>`
+
+## Public Functions
+
 |                | Name           |
 | -------------- | -------------- |
-| virtual void | **[IncreaseCF](Classes/class_increase_c_f___float.md#function-increasecf)**([DataStore](Classes/class_data_store.md) * ds) override |
+| | **[MDA](Classes/class_m_d_a.md#function-mda)**([OP](Classes/class_o_p.md) * op)<br>Construct a new [MDA](Classes/class_m_d_a.md) object.  |
+| virtual | **[~MDA](Classes/class_m_d_a.md#function-~mda)**()<br>Destroy the [MDA](Classes/class_m_d_a.md) object.  |
+| void | **[change_state](Classes/class_m_d_a.md#function-change-state)**(state_e stateID)<br>Changes state for this [MDA](Classes/class_m_d_a.md).  |
+| void | **[create](Classes/class_m_d_a.md#function-create)**()<br>Call the equivalent create function on the current state.  |
+| void | **[insert_cups](Classes/class_m_d_a.md#function-insert-cups)**(int n)<br>Call the equivalent insert_cups function on the current state.  |
+| void | **[coin](Classes/class_m_d_a.md#function-coin)**(int f)<br>Call the equivalent coin function on the current state.  |
+| void | **[card](Classes/class_m_d_a.md#function-card)**()<br>Call the equivalent card function on the current state.  |
+| void | **[cancel](Classes/class_m_d_a.md#function-cancel)**()<br>Call the equivalent cancel function on the current state.  |
+| void | **[set_price](Classes/class_m_d_a.md#function-set-price)**()<br>Call the equivalent set_price function on the current state.  |
+| void | **[dispose_drink](Classes/class_m_d_a.md#function-dispose-drink)**(int d)<br>Call the equivalent dispose_drink function on the current state.  |
+| void | **[additive](Classes/class_m_d_a.md#function-additive)**(int d)<br>Call the equivalent additive function on the current state.  |*
+
+# State_t
+
+Inherited by [CoinsInserted_s](Classes/class_coins_inserted__s.md), [Create_s](Classes/class_create__s.md), [Idle_s](Classes/class_idle__s.md), [NoCups_s](Classes/class_no_cups__s.md)
+
+## Public Functions
+
+|                | Name           |
+| -------------- | -------------- |
+| | **[State_t](Classes/class_state__t.md#function-state-t)**([MDA](Classes/class_m_d_a.md) *mda, [OP](Classes/class_o_p.md)* o, [Context_t](Classes/class_context__t.md) * ctx) |
+| virtual | **[~State_t](Classes/class_state__t.md#function-~state-t)**() =default |
+| virtual void | **[create](Classes/class_state__t.md#function-create)**()<br>Call the state's create function.  |
+| virtual void | **[insert_cups](Classes/class_state__t.md#function-insert-cups)**(int n)<br>Call the state's insert_cups function.  |
+| virtual void | **[coin](Classes/class_state__t.md#function-coin)**(int n)<br>Call the state's coin function.  |
+| virtual void | **[card](Classes/class_state__t.md#function-card)**()<br>Call the state's card function.  |
+| virtual void | **[cancel](Classes/class_state__t.md#function-cancel)**()<br>Call the state's cancel function.  |
+| virtual void | **[set_price](Classes/class_state__t.md#function-set-price)**()<br>Call the state's set_price function.  |
+| virtual void | **[dispose_drink](Classes/class_state__t.md#function-dispose-drink)**(int d)<br>Call the state's dispose_drink function.  |
+| virtual void | **[additive](Classes/class_state__t.md#function-additive)**(int d)<br>Call the state's additive function.  |
+
+# NoCups_s
+
+The NoCups state.
+
+`#include <noCups.hpp>`
+
+Inherits from State_t
+
+## Public Functions
+
+|                | Name           |
+| -------------- | -------------- |
+| | **[NoCups_s](Classes/class_no_cups__s.md#function-nocups-s)**([MDA](Classes/class_m_d_a.md) *mda, [OP](Classes/class_o_p.md)* o, [Context_t](Classes/class_context__t.md) * ctx) |
+| | **[~NoCups_s](Classes/class_no_cups__s.md#function-~nocups-s)**() override =default |
+| void | **[coin](Classes/class_no_cups__s.md#function-coin)**(int n) override<br>Call this state's coin function.  |
+| void | **[insert_cups](Classes/class_no_cups__s.md#function-insert-cups)**(int n) override<br>Call this state's insert_cups function.  |
+
+# Idle_s
+
+The Idle state.
+
+`#include <idle.hpp>`
+
+Inherits from State_t
+
+## Public Functions
+
+|                | Name           |
+| -------------- | -------------- |
+| | **[Idle_s](Classes/class_idle__s.md#function-idle-s)**([MDA](Classes/class_m_d_a.md) *mda, [OP](Classes/class_o_p.md)* o, [Context_t](Classes/class_context__t.md) * ctx) |
+| | **[~Idle_s](Classes/class_idle__s.md#function-~idle-s)**() override =default |
+| void | **[coin](Classes/class_idle__s.md#function-coin)**(int f) override<br>Call this state's coin function.  |
+| void | **[insert_cups](Classes/class_idle__s.md#function-insert-cups)**(int n) override<br>Call this state's insert_cups function.  |
+| void | **[set_price](Classes/class_idle__s.md#function-set-price)**() override<br>Call this state's set_price function.  |
+| void | **[card](Classes/class_idle__s.md#function-card)**() override<br>Call this state's card function.  |
+
+# Create_s
+
+The Create state.
+
+`#include <create.hpp>`
+
+Inherits from State_t
+
+## Public Functions
+
+|                | Name           |
+| -------------- | -------------- |
+| | **[Create_s](Classes/class_create__s.md#function-create-s)**([MDA](Classes/class_m_d_a.md) *mda, [OP](Classes/class_o_p.md)* o, [Context_t](Classes/class_context__t.md) * ctx) |
+| | **[~Create_s](Classes/class_create__s.md#function-~create-s)**() override =default |
+| void | **[create](Classes/class_create__s.md#function-create)**() override<br>Call this state's create function.  |
+
+# Context_t
+
+Context data for states.
+
+`#include <state.hpp>`
+
+## Public Functions
+
+|                | Name           |
+| -------------- | -------------- |
+| | **[Context_t](Classes/class_context__t.md#function-context-t)**() =default |
+| | **[~Context_t](Classes/class_context__t.md#function-~context-t)**() =default |
+| void | **[set_cups](Classes/class_context__t.md#function-set-cups)**(int n) |
+| int | **[get_cups](Classes/class_context__t.md#function-get-cups)**() |
+| void | **[clear_additives](Classes/class_context__t.md#function-clear-additives)**() |
+| void | **[toggle_additive](Classes/class_context__t.md#function-toggle-additive)**(additive_e add) |
+| std::set< int > | **[get_additives](Classes/class_context__t.md#function-get-additives)**() |
+
+# CoinsInserted_s
+
+The CoinsInserted state.
+
+`#include <coinsInserted.hpp>`
+
+Inherits from State_t
+
+## Public Functions
+
+|                | Name           |
+| -------------- | -------------- |
+| | **[CoinsInserted_s](Classes/class_coins_inserted__s.md#function-coinsinserted-s)**([MDA](Classes/class_m_d_a.md) *mda, [OP](Classes/class_o_p.md)* o, [Context_t](Classes/class_context__t.md) * ctx) |
+| | **[~CoinsInserted_s](Classes/class_coins_inserted__s.md#function-~coinsinserted-s)**() override =default |
+| void | **[coin](Classes/class_coins_inserted__s.md#function-coin)**(int f) override<br>Call this state's coin function.  |
+| void | **[cancel](Classes/class_coins_inserted__s.md#function-cancel)**() override<br>Call this state's cancel function.  |
+| void | **[dispose_drink](Classes/class_coins_inserted__s.md#function-dispose-drink)**(int d) override<br>Call this state's dispose_drink function.  |
+| void | **[additive](Classes/class_coins_inserted__s.md#function-additive)**(int d) override<br>Call this state's additive function.  |
 
 # 4 - Sequence Diagrams

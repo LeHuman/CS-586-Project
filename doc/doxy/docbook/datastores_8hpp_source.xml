@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_datastores_8hpp_source" xml:lang="en-US">
-<title>datastores.hpp</title>
-<indexterm><primary>//wsl$/Debian/home/bytewise/github/CS586_Project/Part 2/include/datastore/datastores.hpp</primary></indexterm>
-<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
-2 
-3 <emphasis role="preprocessor">#include&#32;&quot;DS_1.hpp&quot;</emphasis>
-4 <emphasis role="preprocessor">#include&#32;&quot;DS_2.hpp&quot;</emphasis>
-</programlisting></section>
